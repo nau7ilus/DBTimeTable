@@ -1,1 +1,29 @@
-/* You can add global styles to this file, and also import other style files */
+@font-face {
+  font-family: "DIN";
+  src:
+    url("./assets/fonts/DIN-Medium.woff2") format("woff2"),
+    url("./assets/fonts/DIN-Medium.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "DIN";
+  src:
+    local("DIN-Regular"),
+    url("./assets/fonts/DIN-Regular.woff2") format("woff2"),
+    url("./assets/fonts/DIN-Regular.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+}
+
+html {
+  font-family: "DIN", Arial, Helvetica, sans-serif;
+}
