@@ -53,13 +53,13 @@ header {
 }
 
 section.timetable {
+  padding-bottom: 1rem;
+  border-bottom: solid 0.1px rgba(255, 255, 255, 0.5);
+
   .top {
     display: flex;
     justify-content: end;
     flex-direction: column;
     font-size: 1rem;
-
-    padding-bottom: 1rem;
-    border-bottom: solid 0.1px rgba(255, 255, 255, 0.5);
   }
 }
