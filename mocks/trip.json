@@ -1,0 +1,293 @@
+{
+  "origin": {
+    "type": "stop",
+    "id": "8013481",
+    "name": "Golm",
+    "location": {
+      "type": "location",
+      "id": "8013481",
+      "latitude": 52.408532,
+      "longitude": 12.971506
+    },
+    "products": {
+      "nationalExpress": false,
+      "national": false,
+      "regionalExp": false,
+      "regional": true,
+      "suburban": false,
+      "bus": true,
+      "ferry": false,
+      "subway": false,
+      "tram": false,
+      "taxi": false
+    }
+  },
+  "destination": {
+    "type": "stop",
+    "id": "8011695",
+    "name": "Potsdam Griebnitzsee",
+    "location": {
+      "type": "location",
+      "id": "8011695",
+      "latitude": 52.394437,
+      "longitude": 13.128728
+    },
+    "products": {
+      "nationalExpress": false,
+      "national": false,
+      "regionalExp": false,
+      "regional": true,
+      "suburban": true,
+      "bus": true,
+      "ferry": false,
+      "subway": false,
+      "tram": false,
+      "taxi": false
+    }
+  },
+  "departure": "2024-10-22T09:02:00+02:00",
+  "plannedDeparture": "2024-10-22T09:02:00+02:00",
+  "departureDelay": null,
+  "arrival": "2024-10-22T09:21:00+02:00",
+  "plannedArrival": "2024-10-22T09:20:00+02:00",
+  "arrivalDelay": 60,
+  "reachable": true,
+  "line": {
+    "type": "line",
+    "id": "rb-22",
+    "fahrtNr": "18109",
+    "name": "RB 22",
+    "public": true,
+    "adminCode": "800165",
+    "productName": "RB",
+    "mode": "train",
+    "product": "regional",
+    "operator": {
+      "type": "operator",
+      "id": "db-regio-ag-nordost",
+      "name": "DB Regio AG Nordost"
+    },
+    "additionalName": "RB 22"
+  },
+  "direction": "Potsdam Griebnitzsee",
+  "arrivalPlatform": "5",
+  "plannedArrivalPlatform": "5",
+  "arrivalPrognosisType": null,
+  "departurePlatform": "2",
+  "plannedDeparturePlatform": "2",
+  "departurePrognosisType": null,
+  "stopovers": [
+    {
+      "stop": {
+        "type": "stop",
+        "id": "8013481",
+        "name": "Golm",
+        "location": {
+          "type": "location",
+          "id": "8013481",
+          "latitude": 52.408532,
+          "longitude": 12.971506
+        },
+        "products": {
+          "nationalExpress": false,
+          "national": false,
+          "regionalExp": false,
+          "regional": true,
+          "suburban": false,
+          "bus": true,
+          "ferry": false,
+          "subway": false,
+          "tram": false,
+          "taxi": false
+        }
+      },
+      "arrival": null,
+      "plannedArrival": null,
+      "arrivalDelay": null,
+      "arrivalPlatform": null,
+      "arrivalPrognosisType": null,
+      "plannedArrivalPlatform": null,
+      "departure": "2024-10-22T09:02:00+02:00",
+      "plannedDeparture": "2024-10-22T09:02:00+02:00",
+      "departureDelay": null,
+      "departurePlatform": "2",
+      "departurePrognosisType": null,
+      "plannedDeparturePlatform": "2"
+    },
+    {
+      "stop": {
+        "type": "stop",
+        "id": "8010377",
+        "name": "Potsdam Park Sanssouci",
+        "location": {
+          "type": "location",
+          "id": "8010377",
+          "latitude": 52.394104,
+          "longitude": 13.014502
+        },
+        "products": {
+          "nationalExpress": false,
+          "national": false,
+          "regionalExp": false,
+          "regional": true,
+          "suburban": false,
+          "bus": true,
+          "ferry": false,
+          "subway": false,
+          "tram": false,
+          "taxi": false
+        }
+      },
+      "arrival": "2024-10-22T09:08:00+02:00",
+      "plannedArrival": "2024-10-22T09:06:00+02:00",
+      "arrivalDelay": 120,
+      "arrivalPlatform": "4",
+      "arrivalPrognosisType": null,
+      "plannedArrivalPlatform": "4",
+      "departure": "2024-10-22T09:09:00+02:00",
+      "plannedDeparture": "2024-10-22T09:07:00+02:00",
+      "departureDelay": 120,
+      "departurePlatform": "4",
+      "departurePrognosisType": null,
+      "plannedDeparturePlatform": "4"
+    },
+    {
+      "stop": {
+        "type": "stop",
+        "id": "8010280",
+        "name": "Potsdam Charlottenhof",
+        "location": {
+          "type": "location",
+          "id": "8010280",
+          "latitude": 52.392801,
+          "longitude": 13.03622
+        },
+        "products": {
+          "nationalExpress": false,
+          "national": false,
+          "regionalExp": false,
+          "regional": true,
+          "suburban": false,
+          "bus": true,
+          "ferry": false,
+          "subway": false,
+          "tram": true,
+          "taxi": false
+        }
+      },
+      "arrival": "2024-10-22T09:11:00+02:00",
+      "plannedArrival": "2024-10-22T09:10:00+02:00",
+      "arrivalDelay": 60,
+      "arrivalPlatform": "2",
+      "arrivalPrognosisType": null,
+      "plannedArrivalPlatform": "2",
+      "departure": "2024-10-22T09:12:00+02:00",
+      "plannedDeparture": "2024-10-22T09:11:00+02:00",
+      "departureDelay": 60,
+      "departurePlatform": "2",
+      "departurePrognosisType": null,
+      "plannedDeparturePlatform": "2"
+    },
+    {
+      "stop": {
+        "type": "stop",
+        "id": "8012666",
+        "name": "Potsdam Hbf",
+        "location": {
+          "type": "location",
+          "id": "8012666",
+          "latitude": 52.391551,
+          "longitude": 13.066711
+        },
+        "products": {
+          "nationalExpress": true,
+          "national": true,
+          "regionalExp": false,
+          "regional": true,
+          "suburban": true,
+          "bus": true,
+          "ferry": false,
+          "subway": false,
+          "tram": true,
+          "taxi": false
+        }
+      },
+      "arrival": "2024-10-22T09:14:00+02:00",
+      "plannedArrival": "2024-10-22T09:14:00+02:00",
+      "arrivalDelay": 0,
+      "arrivalPlatform": "4",
+      "arrivalPrognosisType": null,
+      "plannedArrivalPlatform": "4",
+      "departure": "2024-10-22T09:18:00+02:00",
+      "plannedDeparture": "2024-10-22T09:17:00+02:00",
+      "departureDelay": 60,
+      "departurePlatform": "4",
+      "departurePrognosisType": null,
+      "plannedDeparturePlatform": "4"
+    },
+    {
+      "stop": {
+        "type": "stop",
+        "id": "8011695",
+        "name": "Potsdam Griebnitzsee",
+        "location": {
+          "type": "location",
+          "id": "8011695",
+          "latitude": 52.394437,
+          "longitude": 13.128728
+        },
+        "products": {
+          "nationalExpress": false,
+          "national": false,
+          "regionalExp": false,
+          "regional": true,
+          "suburban": true,
+          "bus": true,
+          "ferry": false,
+          "subway": false,
+          "tram": false,
+          "taxi": false
+        }
+      },
+      "arrival": "2024-10-22T09:21:00+02:00",
+      "plannedArrival": "2024-10-22T09:20:00+02:00",
+      "arrivalDelay": 60,
+      "arrivalPlatform": "5",
+      "arrivalPrognosisType": null,
+      "plannedArrivalPlatform": "5",
+      "departure": null,
+      "plannedDeparture": null,
+      "departureDelay": null,
+      "departurePlatform": null,
+      "departurePrognosisType": null,
+      "plannedDeparturePlatform": null
+    }
+  ],
+  "remarks": [
+    {
+      "text": "Number of bicycles conveyed limited",
+      "type": "hint",
+      "code": "bicycle-conveyance",
+      "summary": "bicycles conveyed"
+    },
+    {
+      "type": "hint",
+      "code": "ZL",
+      "text": "Several destinations: please note the displays"
+    },
+    {
+      "text": "vehicle-mounted access aid",
+      "type": "hint",
+      "code": "boarding-ramp",
+      "summary": "vehicle-mounted boarding ramp available"
+    },
+    {
+      "text": "Wifi available",
+      "type": "hint",
+      "code": "wifi",
+      "summary": "WiFi available"
+    }
+  ],
+  "id": "2|#VN#1#ST#1729107992#PI#0#ZI#307585#TA#1#DA#221024#1S#8013481#1T#902#LS#8011695#LT#920#PU#80#RT#1#CA#RB#ZE#18109#ZB#RB 18109#PC#3#FR#8013481#FT#902#TO#8011695#TT#920#",
+  "realtimeDataUpdatedAt": 1729581639
+}
