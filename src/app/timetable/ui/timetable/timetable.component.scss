@@ -9,3 +9,57 @@ body {
   background-color: $blue-bg;
   color: $text-color;
 }
+
+.container {
+  max-width: 90%;
+  margin: 2rem auto;
+}
+
+header {
+  .logo {
+    display: flex;
+    justify-content: end;
+
+    img {
+      max-width: 5rem;
+    }
+  }
+
+  .headline {
+    font-size: 1.5rem;
+    display: flex;
+    align-items: center;
+
+    h1 {
+      font-size: 1.5em;
+    }
+
+    span {
+      margin: 0.5rem;
+    }
+
+    .translation {
+      font-style: italic;
+      font-weight: 400;
+    }
+  }
+}
+
+.container {
+  display: grid;
+  grid-template-columns: 0.5fr 2fr 0.3fr 1fr;
+  gap: 2rem;
+  padding: 20px;
+}
+
+section.timetable {
+  .top {
+    display: flex;
+    justify-content: end;
+    flex-direction: column;
+    font-size: 1rem;
+
+    padding-bottom: 1rem;
+    border-bottom: solid 0.1px rgba(255, 255, 255, 0.5);
+  }
+}
