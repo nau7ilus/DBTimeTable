@@ -1,0 +1,11 @@
+$blue-bg: #091bbd;
+$text-color: #fff;
+
+html {
+  height: 100%;
+}
+
+body {
+  background-color: $blue-bg;
+  color: $text-color;
+}
