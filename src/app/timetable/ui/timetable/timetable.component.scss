@@ -54,7 +54,7 @@ section.timetable {
 
   .container div {
     padding-bottom: 1rem;
-    border-bottom: solid 0.1px rgba(255, 255, 255, 0.5);
+    border-bottom: solid 0.1px rgba($text-color, 0.5);
   }
 
   .top {
