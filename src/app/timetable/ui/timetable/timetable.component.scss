@@ -13,6 +13,10 @@ body {
 .container {
   max-width: 90%;
   margin: 2rem auto;
+
+  display: grid;
+  grid-template-columns: 0.5fr 2fr 0.3fr 1fr;
+  gap: 2rem;
 }
 
 header {
@@ -45,16 +49,13 @@ header {
   }
 }
 
-.container {
-  display: grid;
-  grid-template-columns: 0.5fr 2fr 0.3fr 1fr;
-  gap: 2rem;
-  padding: 20px;
-}
-
 section.timetable {
-  padding-bottom: 1rem;
-  border-bottom: solid 0.1px rgba(255, 255, 255, 0.5);
+  margin-top: 3rem;
+
+  .container div {
+    padding-bottom: 1rem;
+    border-bottom: solid 0.1px rgba(255, 255, 255, 0.5);
+  }
 
   .top {
     display: flex;
