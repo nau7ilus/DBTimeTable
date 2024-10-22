@@ -1,637 +1,6 @@
 [
   {
-    "tripId": "2|#VN#1#ST#1729107992#PI#0#ZI#1526430#TA#1#DA#221024#1S#736251#1T#841#LS#728542#LT#923#PU#80#RT#1#CA#STR#ZE#96#ZB#STR   96#PC#8#FR#736251#FT#841#TO#728542#TT#923#",
-    "stop": {
-      "type": "stop",
-      "id": "748326",
-      "name": "Hauptbahnhof (S), Potsdam",
-      "location": {
-        "type": "location",
-        "id": "748326",
-        "latitude": 52.390985,
-        "longitude": 13.065758
-      },
-      "products": {
-        "nationalExpress": true,
-        "national": true,
-        "regionalExp": false,
-        "regional": true,
-        "suburban": true,
-        "bus": true,
-        "ferry": false,
-        "subway": false,
-        "tram": true,
-        "taxi": false
-      },
-      "station": {
-        "type": "station",
-        "id": "8012666",
-        "name": "Potsdam Hbf",
-        "location": {
-          "type": "location",
-          "id": "8012666",
-          "latitude": 52.391551,
-          "longitude": 13.066711
-        },
-        "products": {
-          "nationalExpress": true,
-          "national": true,
-          "regionalExp": false,
-          "regional": true,
-          "suburban": true,
-          "bus": true,
-          "ferry": false,
-          "subway": false,
-          "tram": true,
-          "taxi": false
-        }
-      }
-    },
-    "when": "2024-10-22T09:03:00+02:00",
-    "plannedWhen": "2024-10-22T09:02:00+02:00",
-    "delay": 60,
-    "platform": null,
-    "plannedPlatform": null,
-    "prognosisType": "prognosed",
-    "direction": "Campus Jungfernsee, Potsdam",
-    "provenance": null,
-    "line": {
-      "type": "line",
-      "id": "8-vbbvit-96",
-      "fahrtNr": "3960",
-      "name": "STR 96",
-      "public": true,
-      "adminCode": "vbbVIT",
-      "productName": "STR",
-      "mode": "train",
-      "product": "tram",
-      "operator": {
-        "type": "operator",
-        "id": "nahreisezug",
-        "name": "Nahreisezug"
-      }
-    },
-    "remarks": [],
-    "origin": null,
-    "destination": {
-      "type": "stop",
-      "id": "728542",
-      "name": "Campus Jungfernsee, Potsdam",
-      "location": {
-        "type": "location",
-        "id": "728542",
-        "latitude": 52.432353,
-        "longitude": 13.053506
-      },
-      "products": {
-        "nationalExpress": false,
-        "national": false,
-        "regionalExp": false,
-        "regional": false,
-        "suburban": false,
-        "bus": true,
-        "ferry": false,
-        "subway": false,
-        "tram": true,
-        "taxi": false
-      }
-    },
-    "currentTripPosition": {
-      "type": "location",
-      "latitude": 52.389681,
-      "longitude": 13.067385
-    }
-  },
-  {
-    "tripId": "2|#VN#1#ST#1729107992#PI#0#ZI#1529060#TA#1#DA#221024#1S#728542#1T#842#LS#736251#LT#924#PU#80#RT#1#CA#STR#ZE#96#ZB#STR   96#PC#8#FR#728542#FT#842#TO#736251#TT#924#",
-    "stop": {
-      "type": "stop",
-      "id": "748326",
-      "name": "Hauptbahnhof (S), Potsdam",
-      "location": {
-        "type": "location",
-        "id": "748326",
-        "latitude": 52.390985,
-        "longitude": 13.065758
-      },
-      "products": {
-        "nationalExpress": true,
-        "national": true,
-        "regionalExp": false,
-        "regional": true,
-        "suburban": true,
-        "bus": true,
-        "ferry": false,
-        "subway": false,
-        "tram": true,
-        "taxi": false
-      },
-      "station": {
-        "type": "station",
-        "id": "8012666",
-        "name": "Potsdam Hbf",
-        "location": {
-          "type": "location",
-          "id": "8012666",
-          "latitude": 52.391551,
-          "longitude": 13.066711
-        },
-        "products": {
-          "nationalExpress": true,
-          "national": true,
-          "regionalExp": false,
-          "regional": true,
-          "suburban": true,
-          "bus": true,
-          "ferry": false,
-          "subway": false,
-          "tram": true,
-          "taxi": false
-        }
-      }
-    },
-    "when": "2024-10-22T09:03:00+02:00",
-    "plannedWhen": "2024-10-22T09:02:00+02:00",
-    "delay": 60,
-    "platform": null,
-    "plannedPlatform": null,
-    "prognosisType": "prognosed",
-    "direction": "Marie-Juchacz-Str., Potsdam",
-    "provenance": null,
-    "line": {
-      "type": "line",
-      "id": "8-vbbvit-96",
-      "fahrtNr": "4222",
-      "name": "STR 96",
-      "public": true,
-      "adminCode": "vbbVIT",
-      "productName": "STR",
-      "mode": "train",
-      "product": "tram",
-      "operator": {
-        "type": "operator",
-        "id": "nahreisezug",
-        "name": "Nahreisezug"
-      }
-    },
-    "remarks": [],
-    "origin": null,
-    "destination": {
-      "type": "stop",
-      "id": "736251",
-      "name": "Marie-Juchacz-Str., Potsdam",
-      "location": {
-        "type": "location",
-        "id": "736251",
-        "latitude": 52.357824,
-        "longitude": 13.137465
-      },
-      "products": {
-        "nationalExpress": false,
-        "national": false,
-        "regionalExp": false,
-        "regional": false,
-        "suburban": false,
-        "bus": true,
-        "ferry": false,
-        "subway": false,
-        "tram": true,
-        "taxi": false
-      }
-    },
-    "currentTripPosition": {
-      "type": "location",
-      "latitude": 52.391578,
-      "longitude": 13.064679
-    }
-  },
-  {
-    "tripId": "2|#VN#1#ST#1729107992#PI#0#ZI#1490491#TA#1#DA#221024#1S#748326#1T#903#LS#736515#LT#941#PU#80#RT#1#CA#Bus#ZE#750#ZB#Bus  750#PC#5#FR#748326#FT#903#TO#736515#TT#941#",
-    "stop": {
-      "type": "stop",
-      "id": "748326",
-      "name": "Hauptbahnhof (S), Potsdam",
-      "location": {
-        "type": "location",
-        "id": "748326",
-        "latitude": 52.390985,
-        "longitude": 13.065758
-      },
-      "products": {
-        "nationalExpress": true,
-        "national": true,
-        "regionalExp": false,
-        "regional": true,
-        "suburban": true,
-        "bus": true,
-        "ferry": false,
-        "subway": false,
-        "tram": true,
-        "taxi": false
-      },
-      "station": {
-        "type": "station",
-        "id": "8012666",
-        "name": "Potsdam Hbf",
-        "location": {
-          "type": "location",
-          "id": "8012666",
-          "latitude": 52.391551,
-          "longitude": 13.066711
-        },
-        "products": {
-          "nationalExpress": true,
-          "national": true,
-          "regionalExp": false,
-          "regional": true,
-          "suburban": true,
-          "bus": true,
-          "ferry": false,
-          "subway": false,
-          "tram": true,
-          "taxi": false
-        }
-      }
-    },
-    "when": "2024-10-22T09:03:00+02:00",
-    "plannedWhen": "2024-10-22T09:03:00+02:00",
-    "delay": null,
-    "platform": null,
-    "plannedPlatform": null,
-    "prognosisType": null,
-    "direction": "Bahnhof, Ludwigsfelde",
-    "provenance": null,
-    "line": {
-      "type": "line",
-      "id": "5-vbbvtf-750",
-      "fahrtNr": "1269",
-      "name": "Bus 750",
-      "public": true,
-      "adminCode": "vbbVTF",
-      "productName": "Bus",
-      "mode": "bus",
-      "product": "bus",
-      "operator": {
-        "type": "operator",
-        "id": "nahreisezug",
-        "name": "Nahreisezug"
-      }
-    },
-    "remarks": [],
-    "origin": null,
-    "destination": {
-      "type": "stop",
-      "id": "736515",
-      "name": "Bahnhof, Ludwigsfelde",
-      "location": {
-        "type": "location",
-        "id": "736515",
-        "latitude": 52.298162,
-        "longitude": 13.266784
-      },
-      "products": {
-        "nationalExpress": false,
-        "national": false,
-        "regionalExp": false,
-        "regional": true,
-        "suburban": false,
-        "bus": true,
-        "ferry": false,
-        "subway": false,
-        "tram": false,
-        "taxi": false
-      },
-      "station": {
-        "type": "station",
-        "id": "8010215",
-        "name": "Ludwigsfelde",
-        "location": {
-          "type": "location",
-          "id": "8010215",
-          "latitude": 52.299214,
-          "longitude": 13.267602
-        },
-        "products": {
-          "nationalExpress": false,
-          "national": false,
-          "regionalExp": false,
-          "regional": true,
-          "suburban": false,
-          "bus": true,
-          "ferry": false,
-          "subway": false,
-          "tram": false,
-          "taxi": false
-        }
-      }
-    }
-  },
-  {
-    "tripId": "2|#VN#1#ST#1729107992#PI#0#ZI#1984619#TA#1#DA#221024#1S#736273#1T#730#LS#736273#LT#914#PU#80#RT#1#CA#Bus#ZE#694#ZB#Bus  694#PC#5#FR#736273#FT#730#TO#736273#TT#914#",
-    "stop": {
-      "type": "stop",
-      "id": "736090",
-      "name": "Hauptbahnhof Nord (S), Potsdam",
-      "location": {
-        "type": "location",
-        "id": "736090",
-        "latitude": 52.392747,
-        "longitude": 13.066963
-      },
-      "products": {
-        "nationalExpress": true,
-        "national": true,
-        "regionalExp": false,
-        "regional": true,
-        "suburban": true,
-        "bus": true,
-        "ferry": false,
-        "subway": false,
-        "tram": true,
-        "taxi": false
-      },
-      "station": {
-        "type": "station",
-        "id": "8012666",
-        "name": "Potsdam Hbf",
-        "location": {
-          "type": "location",
-          "id": "8012666",
-          "latitude": 52.391551,
-          "longitude": 13.066711
-        },
-        "products": {
-          "nationalExpress": true,
-          "national": true,
-          "regionalExp": false,
-          "regional": true,
-          "suburban": true,
-          "bus": true,
-          "ferry": false,
-          "subway": false,
-          "tram": true,
-          "taxi": false
-        }
-      }
-    },
-    "when": "2024-10-22T09:04:00+02:00",
-    "plannedWhen": "2024-10-22T09:00:00+02:00",
-    "delay": 240,
-    "platform": null,
-    "plannedPlatform": null,
-    "prognosisType": "prognosed",
-    "direction": "Küsselstr., Potsdam",
-    "provenance": null,
-    "line": {
-      "type": "line",
-      "id": "5-vbbvib-694",
-      "fahrtNr": "625",
-      "name": "Bus 694",
-      "public": true,
-      "adminCode": "vbbVIB",
-      "productName": "Bus",
-      "mode": "bus",
-      "product": "bus",
-      "operator": {
-        "type": "operator",
-        "id": "nahreisezug",
-        "name": "Nahreisezug"
-      }
-    },
-    "remarks": [],
-    "origin": null,
-    "destination": {
-      "type": "stop",
-      "id": "736273",
-      "name": "Küsselstr., Potsdam",
-      "location": {
-        "type": "location",
-        "id": "736273",
-        "latitude": 52.387821,
-        "longitude": 13.043779
-      },
-      "products": {
-        "nationalExpress": false,
-        "national": false,
-        "regionalExp": false,
-        "regional": false,
-        "suburban": false,
-        "bus": true,
-        "ferry": false,
-        "subway": false,
-        "tram": false,
-        "taxi": false
-      }
-    },
-    "currentTripPosition": {
-      "type": "location",
-      "latitude": 52.394014,
-      "longitude": 13.075179
-    }
-  },
-  {
-    "tripId": "2|#VN#1#ST#1729107992#PI#0#ZI#1534054#TA#8#DA#221024#1S#748326#1T#904#LS#749381#LT#933#PU#80#RT#1#CA#Bus#ZE#605#ZB#Bus  605#PC#5#FR#748326#FT#904#TO#749381#TT#933#",
-    "stop": {
-      "type": "stop",
-      "id": "748326",
-      "name": "Hauptbahnhof (S), Potsdam",
-      "location": {
-        "type": "location",
-        "id": "748326",
-        "latitude": 52.390985,
-        "longitude": 13.065758
-      },
-      "products": {
-        "nationalExpress": true,
-        "national": true,
-        "regionalExp": false,
-        "regional": true,
-        "suburban": true,
-        "bus": true,
-        "ferry": false,
-        "subway": false,
-        "tram": true,
-        "taxi": false
-      },
-      "station": {
-        "type": "station",
-        "id": "8012666",
-        "name": "Potsdam Hbf",
-        "location": {
-          "type": "location",
-          "id": "8012666",
-          "latitude": 52.391551,
-          "longitude": 13.066711
-        },
-        "products": {
-          "nationalExpress": true,
-          "national": true,
-          "regionalExp": false,
-          "regional": true,
-          "suburban": true,
-          "bus": true,
-          "ferry": false,
-          "subway": false,
-          "tram": true,
-          "taxi": false
-        }
-      }
-    },
-    "when": "2024-10-22T09:04:00+02:00",
-    "plannedWhen": "2024-10-22T09:04:00+02:00",
-    "delay": null,
-    "platform": null,
-    "plannedPlatform": null,
-    "prognosisType": null,
-    "direction": "Science Park West, Potsdam",
-    "provenance": null,
-    "line": {
-      "type": "line",
-      "id": "5-vbbvib-605",
-      "fahrtNr": "4751",
-      "name": "Bus 605",
-      "public": true,
-      "adminCode": "vbbVIB",
-      "productName": "Bus",
-      "mode": "bus",
-      "product": "bus",
-      "operator": {
-        "type": "operator",
-        "id": "nahreisezug",
-        "name": "Nahreisezug"
-      }
-    },
-    "remarks": [],
-    "origin": null,
-    "destination": {
-      "type": "stop",
-      "id": "749381",
-      "name": "Science Park West, Potsdam",
-      "location": {
-        "type": "location",
-        "id": "749381",
-        "latitude": 52.413746,
-        "longitude": 12.968845
-      },
-      "products": {
-        "nationalExpress": false,
-        "national": false,
-        "regionalExp": false,
-        "regional": false,
-        "suburban": false,
-        "bus": true,
-        "ferry": false,
-        "subway": false,
-        "tram": false,
-        "taxi": false
-      }
-    }
-  },
-  {
-    "tripId": "2|#VN#1#ST#1729107992#PI#0#ZI#1990570#TA#2#DA#221024#1S#736273#1T#850#LS#736273#LT#1033#PU#80#RT#1#CA#Bus#ZE#694#ZB#Bus  694#PC#5#FR#736273#FT#850#TO#736273#TT#1033#",
-    "stop": {
-      "type": "stop",
-      "id": "736090",
-      "name": "Hauptbahnhof Nord (S), Potsdam",
-      "location": {
-        "type": "location",
-        "id": "736090",
-        "latitude": 52.392747,
-        "longitude": 13.066963
-      },
-      "products": {
-        "nationalExpress": true,
-        "national": true,
-        "regionalExp": false,
-        "regional": true,
-        "suburban": true,
-        "bus": true,
-        "ferry": false,
-        "subway": false,
-        "tram": true,
-        "taxi": false
-      },
-      "station": {
-        "type": "station",
-        "id": "8012666",
-        "name": "Potsdam Hbf",
-        "location": {
-          "type": "location",
-          "id": "8012666",
-          "latitude": 52.391551,
-          "longitude": 13.066711
-        },
-        "products": {
-          "nationalExpress": true,
-          "national": true,
-          "regionalExp": false,
-          "regional": true,
-          "suburban": true,
-          "bus": true,
-          "ferry": false,
-          "subway": false,
-          "tram": true,
-          "taxi": false
-        }
-      }
-    },
-    "when": "2024-10-22T09:05:00+02:00",
-    "plannedWhen": "2024-10-22T09:04:00+02:00",
-    "delay": 60,
-    "platform": null,
-    "plannedPlatform": null,
-    "prognosisType": "prognosed",
-    "direction": "Stern-Center/Gerlachstr., Potsdam",
-    "provenance": null,
-    "line": {
-      "type": "line",
-      "id": "5-vbbvib-694",
-      "fahrtNr": "894",
-      "name": "Bus 694",
-      "public": true,
-      "adminCode": "vbbVIB",
-      "productName": "Bus",
-      "mode": "bus",
-      "product": "bus",
-      "operator": {
-        "type": "operator",
-        "id": "nahreisezug",
-        "name": "Nahreisezug"
-      }
-    },
-    "remarks": [],
-    "origin": null,
-    "destination": {
-      "type": "stop",
-      "id": "736273",
-      "name": "Küsselstr., Potsdam",
-      "location": {
-        "type": "location",
-        "id": "736273",
-        "latitude": 52.387821,
-        "longitude": 13.043779
-      },
-      "products": {
-        "nationalExpress": false,
-        "national": false,
-        "regionalExp": false,
-        "regional": false,
-        "suburban": false,
-        "bus": true,
-        "ferry": false,
-        "subway": false,
-        "tram": false,
-        "taxi": false
-      }
-    },
-    "currentTripPosition": {
-      "type": "location",
-      "latitude": 52.391452,
-      "longitude": 13.066073
-    }
-  },
-  {
-    "tripId": "2|#VN#1#ST#1729107992#PI#0#ZI#668707#TA#0#DA#221024#1S#8010113#1T#726#LS#8010060#LT#938#PU#80#RT#1#CA#DPN#ZE#73765#ZB#RE 73765#PC#3#FR#8010113#FT#726#TO#8010060#TT#938#",
+    "tripId": "2|#VN#1#ST#1729107992#PI#0#ZI#668333#TA#0#DA#221024#1S#8010224#1T#812#LS#8010113#LT#1105#PU#80#RT#1#CA#DPN#ZE#73722#ZB#RE 73722#PC#3#FR#8010224#FT#812#TO#8010113#TT#1105#",
     "stop": {
       "type": "station",
       "id": "8012666",
@@ -655,8 +24,560 @@
         "taxi": false
       }
     },
-    "when": "2024-10-22T09:07:00+02:00",
-    "plannedWhen": "2024-10-22T09:07:00+02:00",
+    "when": "2024-10-22T09:31:00+02:00",
+    "plannedWhen": "2024-10-22T09:31:00+02:00",
+    "delay": 0,
+    "platform": "4",
+    "plannedPlatform": "4",
+    "prognosisType": "prognosed",
+    "direction": "Frankfurt(Oder)",
+    "provenance": null,
+    "line": {
+      "type": "line",
+      "id": "re-1",
+      "fahrtNr": "73722",
+      "name": "RE 1",
+      "public": true,
+      "adminCode": "OWRE__",
+      "productName": "RE",
+      "mode": "train",
+      "product": "regional",
+      "operator": {
+        "type": "operator",
+        "id": "ostdeutsche-eisenbahn-gmbh",
+        "name": "Ostdeutsche Eisenbahn GmbH"
+      },
+      "additionalName": "RE 1"
+    },
+    "remarks": [],
+    "origin": null,
+    "destination": {
+      "type": "station",
+      "id": "8010113",
+      "name": "Frankfurt(Oder)",
+      "location": {
+        "type": "location",
+        "id": "8010113",
+        "latitude": 52.335863,
+        "longitude": 14.547073
+      },
+      "products": {
+        "nationalExpress": false,
+        "national": true,
+        "regionalExp": true,
+        "regional": true,
+        "suburban": false,
+        "bus": true,
+        "ferry": false,
+        "subway": false,
+        "tram": true,
+        "taxi": true
+      }
+    },
+    "currentTripPosition": {
+      "type": "location",
+      "latitude": 52.391749,
+      "longitude": 13.066738
+    }
+  },
+  {
+    "tripId": "2|#VN#1#ST#1729107992#PI#0#ZI#668365#TA#0#DA#221024#1S#8011471#1T#736#LS#8010224#LT#1047#PU#80#RT#1#CA#DPN#ZE#73725#ZB#RE 73725#PC#3#FR#8011471#FT#736#TO#8010224#TT#1047#",
+    "stop": {
+      "type": "station",
+      "id": "8012666",
+      "name": "Potsdam Hbf",
+      "location": {
+        "type": "location",
+        "id": "8012666",
+        "latitude": 52.391551,
+        "longitude": 13.066711
+      },
+      "products": {
+        "nationalExpress": true,
+        "national": true,
+        "regionalExp": false,
+        "regional": true,
+        "suburban": true,
+        "bus": true,
+        "ferry": false,
+        "subway": false,
+        "tram": true,
+        "taxi": false
+      }
+    },
+    "when": "2024-10-22T09:33:00+02:00",
+    "plannedWhen": "2024-10-22T09:31:00+02:00",
+    "delay": 120,
+    "platform": "3",
+    "plannedPlatform": "3",
+    "prognosisType": "prognosed",
+    "direction": "Magdeburg Hbf",
+    "provenance": null,
+    "line": {
+      "type": "line",
+      "id": "re-1",
+      "fahrtNr": "73725",
+      "name": "RE 1",
+      "public": true,
+      "adminCode": "OWRE__",
+      "productName": "RE",
+      "mode": "train",
+      "product": "regional",
+      "operator": {
+        "type": "operator",
+        "id": "ostdeutsche-eisenbahn-gmbh",
+        "name": "Ostdeutsche Eisenbahn GmbH"
+      },
+      "additionalName": "RE 1"
+    },
+    "remarks": [],
+    "origin": null,
+    "destination": {
+      "type": "station",
+      "id": "8010224",
+      "name": "Magdeburg Hbf",
+      "location": {
+        "type": "location",
+        "id": "8010224",
+        "latitude": 52.130495,
+        "longitude": 11.6269
+      },
+      "products": {
+        "nationalExpress": true,
+        "national": true,
+        "regionalExp": true,
+        "regional": true,
+        "suburban": true,
+        "bus": true,
+        "ferry": false,
+        "subway": false,
+        "tram": true,
+        "taxi": false
+      }
+    },
+    "currentTripPosition": {
+      "type": "location",
+      "latitude": 52.391551,
+      "longitude": 13.066711
+    }
+  },
+  {
+    "tripId": "2|#VN#1#ST#1729107992#PI#0#ZI#308265#TA#0#DA#221024#1S#8012666#1T#935#LS#8011102#LT#1044#PU#80#RT#1#CA#RB#ZE#18250#ZB#RB 18250#PC#3#FR#8012666#FT#935#TO#8011102#TT#1044#",
+    "stop": {
+      "type": "station",
+      "id": "8012666",
+      "name": "Potsdam Hbf",
+      "location": {
+        "type": "location",
+        "id": "8012666",
+        "latitude": 52.391551,
+        "longitude": 13.066711
+      },
+      "products": {
+        "nationalExpress": true,
+        "national": true,
+        "regionalExp": false,
+        "regional": true,
+        "suburban": true,
+        "bus": true,
+        "ferry": false,
+        "subway": false,
+        "tram": true,
+        "taxi": false
+      }
+    },
+    "when": "2024-10-22T09:35:00+02:00",
+    "plannedWhen": "2024-10-22T09:35:00+02:00",
+    "delay": 0,
+    "platform": "1",
+    "plannedPlatform": "1",
+    "prognosisType": "prognosed",
+    "direction": "Berlin Gesundbrunnen",
+    "provenance": null,
+    "line": {
+      "type": "line",
+      "id": "rb-21",
+      "fahrtNr": "18250",
+      "name": "RB 21",
+      "public": true,
+      "adminCode": "800165",
+      "productName": "RB",
+      "mode": "train",
+      "product": "regional",
+      "operator": {
+        "type": "operator",
+        "id": "db-regio-ag-nordost",
+        "name": "DB Regio AG Nordost"
+      },
+      "additionalName": "RB 21"
+    },
+    "remarks": [],
+    "origin": null,
+    "destination": {
+      "type": "station",
+      "id": "8011102",
+      "name": "Berlin Gesundbrunnen",
+      "location": {
+        "type": "location",
+        "id": "8011102",
+        "latitude": 52.548656,
+        "longitude": 13.39106
+      },
+      "products": {
+        "nationalExpress": true,
+        "national": true,
+        "regionalExp": true,
+        "regional": true,
+        "suburban": true,
+        "bus": true,
+        "ferry": false,
+        "subway": true,
+        "tram": false,
+        "taxi": false
+      }
+    }
+  },
+  {
+    "tripId": "2|#VN#1#ST#1729107992#PI#0#ZI#667741#TA#1#DA#221024#1S#8012666#1T#941#LS#8010182#LT#1047#PU#80#RT#1#CA#DPN#ZE#62130#ZB#RB 62130#PC#3#FR#8012666#FT#941#TO#8010182#TT#1047#",
+    "stop": {
+      "type": "station",
+      "id": "8012666",
+      "name": "Potsdam Hbf",
+      "location": {
+        "type": "location",
+        "id": "8012666",
+        "latitude": 52.391551,
+        "longitude": 13.066711
+      },
+      "products": {
+        "nationalExpress": true,
+        "national": true,
+        "regionalExp": false,
+        "regional": true,
+        "suburban": true,
+        "bus": true,
+        "ferry": false,
+        "subway": false,
+        "tram": true,
+        "taxi": false
+      }
+    },
+    "when": "2024-10-22T09:41:00+02:00",
+    "plannedWhen": "2024-10-22T09:41:00+02:00",
+    "delay": 0,
+    "platform": "2",
+    "plannedPlatform": "2",
+    "prognosisType": "prognosed",
+    "direction": "Jüterbog",
+    "provenance": null,
+    "line": {
+      "type": "line",
+      "id": "rb-33",
+      "fahrtNr": "62130",
+      "name": "RB 33",
+      "public": true,
+      "adminCode": "OWRB__",
+      "productName": "RB",
+      "mode": "train",
+      "product": "regional",
+      "operator": {
+        "type": "operator",
+        "id": "ostdeutsche-eisenbahn-gmbh",
+        "name": "Ostdeutsche Eisenbahn GmbH"
+      },
+      "additionalName": "RB 33"
+    },
+    "remarks": [],
+    "origin": null,
+    "destination": {
+      "type": "station",
+      "id": "8010182",
+      "name": "Jüterbog",
+      "location": {
+        "type": "location",
+        "id": "8010182",
+        "latitude": 51.997563,
+        "longitude": 13.05409
+      },
+      "products": {
+        "nationalExpress": false,
+        "national": false,
+        "regionalExp": false,
+        "regional": true,
+        "suburban": true,
+        "bus": true,
+        "ferry": false,
+        "subway": false,
+        "tram": false,
+        "taxi": false
+      }
+    }
+  },
+  {
+    "tripId": "2|#VN#1#ST#1729107992#PI#0#ZI#307799#TA#0#DA#221024#1S#8013481#1T#930#LS#8011201#LT#1046#PU#80#RT#1#CA#RB#ZE#18151#ZB#RB 18151#PC#3#FR#8013481#FT#930#TO#8011201#TT#1046#",
+    "stop": {
+      "type": "station",
+      "id": "8012666",
+      "name": "Potsdam Hbf",
+      "location": {
+        "type": "location",
+        "id": "8012666",
+        "latitude": 52.391551,
+        "longitude": 13.066711
+      },
+      "products": {
+        "nationalExpress": true,
+        "national": true,
+        "regionalExp": false,
+        "regional": true,
+        "suburban": true,
+        "bus": true,
+        "ferry": false,
+        "subway": false,
+        "tram": true,
+        "taxi": false
+      }
+    },
+    "when": "2024-10-22T09:42:00+02:00",
+    "plannedWhen": "2024-10-22T09:42:00+02:00",
+    "delay": 0,
+    "platform": "4",
+    "plannedPlatform": "4",
+    "prognosisType": "prognosed",
+    "direction": "Flughafen BER",
+    "provenance": null,
+    "line": {
+      "type": "line",
+      "id": "rb-23",
+      "fahrtNr": "18151",
+      "name": "RB 23",
+      "public": true,
+      "adminCode": "800165",
+      "productName": "RB",
+      "mode": "train",
+      "product": "regional",
+      "operator": {
+        "type": "operator",
+        "id": "db-regio-ag-nordost",
+        "name": "DB Regio AG Nordost"
+      },
+      "additionalName": "RB 23"
+    },
+    "remarks": [],
+    "origin": null,
+    "destination": {
+      "type": "station",
+      "id": "8011201",
+      "name": "Flughafen BER",
+      "location": {
+        "type": "location",
+        "id": "8011201",
+        "latitude": 52.364808,
+        "longitude": 13.511947
+      },
+      "products": {
+        "nationalExpress": true,
+        "national": true,
+        "regionalExp": false,
+        "regional": true,
+        "suburban": true,
+        "bus": true,
+        "ferry": false,
+        "subway": false,
+        "tram": false,
+        "taxi": false
+      }
+    },
+    "currentTripPosition": {
+      "type": "location",
+      "latitude": 52.399668,
+      "longitude": 12.974473
+    }
+  },
+  {
+    "tripId": "2|#VN#1#ST#1729107992#PI#0#ZI#309136#TA#0#DA#221024#1S#8011695#1T#940#LS#8013487#LT#1056#PU#80#RT#1#CA#RB#ZE#18460#ZB#RB 18460#PC#3#FR#8011695#FT#940#TO#8013487#TT#1056#",
+    "stop": {
+      "type": "station",
+      "id": "8012666",
+      "name": "Potsdam Hbf",
+      "location": {
+        "type": "location",
+        "id": "8012666",
+        "latitude": 52.391551,
+        "longitude": 13.066711
+      },
+      "products": {
+        "nationalExpress": true,
+        "national": true,
+        "regionalExp": false,
+        "regional": true,
+        "suburban": true,
+        "bus": true,
+        "ferry": false,
+        "subway": false,
+        "tram": true,
+        "taxi": false
+      }
+    },
+    "when": "2024-10-22T09:47:00+02:00",
+    "plannedWhen": "2024-10-22T09:47:00+02:00",
+    "delay": 0,
+    "platform": "3",
+    "plannedPlatform": "3",
+    "prognosisType": "prognosed",
+    "direction": "Oranienburg",
+    "provenance": null,
+    "line": {
+      "type": "line",
+      "id": "rb-20",
+      "fahrtNr": "18460",
+      "name": "RB 20",
+      "public": true,
+      "adminCode": "800165",
+      "productName": "RB",
+      "mode": "train",
+      "product": "regional",
+      "operator": {
+        "type": "operator",
+        "id": "db-regio-ag-nordost",
+        "name": "DB Regio AG Nordost"
+      },
+      "additionalName": "RB 20"
+    },
+    "remarks": [],
+    "origin": null,
+    "destination": {
+      "type": "station",
+      "id": "8013487",
+      "name": "Oranienburg",
+      "location": {
+        "type": "location",
+        "id": "8013487",
+        "latitude": 52.75467,
+        "longitude": 13.248886
+      },
+      "products": {
+        "nationalExpress": true,
+        "national": true,
+        "regionalExp": false,
+        "regional": true,
+        "suburban": true,
+        "bus": true,
+        "ferry": false,
+        "subway": false,
+        "tram": false,
+        "taxi": false
+      }
+    }
+  },
+  {
+    "tripId": "2|#VN#1#ST#1729107992#PI#0#ZI#668700#TA#1#DA#221024#1S#8010060#1T#919#LS#8010113#LT#1131#PU#80#RT#1#CA#DPN#ZE#73764#ZB#RE 73764#PC#3#FR#8010060#FT#919#TO#8010113#TT#1131#",
+    "stop": {
+      "type": "station",
+      "id": "8012666",
+      "name": "Potsdam Hbf",
+      "location": {
+        "type": "location",
+        "id": "8012666",
+        "latitude": 52.391551,
+        "longitude": 13.066711
+      },
+      "products": {
+        "nationalExpress": true,
+        "national": true,
+        "regionalExp": false,
+        "regional": true,
+        "suburban": true,
+        "bus": true,
+        "ferry": false,
+        "subway": false,
+        "tram": true,
+        "taxi": false
+      }
+    },
+    "when": "2024-10-22T09:50:00+02:00",
+    "plannedWhen": "2024-10-22T09:50:00+02:00",
+    "delay": 0,
+    "platform": "4",
+    "plannedPlatform": "4",
+    "prognosisType": "prognosed",
+    "direction": "Frankfurt(Oder)",
+    "provenance": null,
+    "line": {
+      "type": "line",
+      "id": "re-1",
+      "fahrtNr": "73764",
+      "name": "RE 1",
+      "public": true,
+      "adminCode": "OWRE__",
+      "productName": "RE",
+      "mode": "train",
+      "product": "regional",
+      "operator": {
+        "type": "operator",
+        "id": "ostdeutsche-eisenbahn-gmbh",
+        "name": "Ostdeutsche Eisenbahn GmbH"
+      },
+      "additionalName": "RE 1"
+    },
+    "remarks": [],
+    "origin": null,
+    "destination": {
+      "type": "station",
+      "id": "8010113",
+      "name": "Frankfurt(Oder)",
+      "location": {
+        "type": "location",
+        "id": "8010113",
+        "latitude": 52.335863,
+        "longitude": 14.547073
+      },
+      "products": {
+        "nationalExpress": false,
+        "national": true,
+        "regionalExp": true,
+        "regional": true,
+        "suburban": false,
+        "bus": true,
+        "ferry": false,
+        "subway": false,
+        "tram": true,
+        "taxi": true
+      }
+    },
+    "currentTripPosition": {
+      "type": "location",
+      "latitude": 52.413665,
+      "longitude": 12.803929
+    }
+  },
+  {
+    "tripId": "2|#VN#1#ST#1729107992#PI#0#ZI#668902#TA#0#DA#221024#1S#8010255#1T#912#LS#8010060#LT#1016#PU#80#RT#1#CA#DPN#ZE#73811#ZB#RE 73811#PC#3#FR#8010255#FT#912#TO#8010060#TT#1016#",
+    "stop": {
+      "type": "station",
+      "id": "8012666",
+      "name": "Potsdam Hbf",
+      "location": {
+        "type": "location",
+        "id": "8012666",
+        "latitude": 52.391551,
+        "longitude": 13.066711
+      },
+      "products": {
+        "nationalExpress": true,
+        "national": true,
+        "regionalExp": false,
+        "regional": true,
+        "suburban": true,
+        "bus": true,
+        "ferry": false,
+        "subway": false,
+        "tram": true,
+        "taxi": false
+      }
+    },
+    "when": "2024-10-22T09:54:00+02:00",
+    "plannedWhen": "2024-10-22T09:54:00+02:00",
     "delay": 0,
     "platform": "3",
     "plannedPlatform": "3",
@@ -666,7 +587,7 @@
     "line": {
       "type": "line",
       "id": "re-1",
-      "fahrtNr": "73765",
+      "fahrtNr": "73811",
       "name": "RE 1",
       "public": true,
       "adminCode": "OWRE__",
@@ -707,21 +628,21 @@
     },
     "currentTripPosition": {
       "type": "location",
-      "latitude": 52.39476,
-      "longitude": 13.129698
+      "latitude": 52.505166,
+      "longitude": 13.319856
     }
   },
   {
-    "tripId": "2|#VN#1#ST#1729107992#PI#0#ZI#1519235#TA#0#DA#221024#1S#748326#1T#907#LS#748344#LT#925#PU#80#RT#1#CA#STR#ZE#92#ZB#STR   92#PC#8#FR#748326#FT#907#TO#748344#TT#925#",
+    "tripId": "2|#VN#1#ST#1729107992#PI#0#ZI#668709#TA#0#DA#221024#1S#8010113#1T#826#LS#8010060#LT#1038#PU#80#RT#1#CA#DPN#ZE#73767#ZB#RE 73767#PC#3#FR#8010113#FT#826#TO#8010060#TT#1038#",
     "stop": {
-      "type": "stop",
-      "id": "748326",
-      "name": "Hauptbahnhof (S), Potsdam",
+      "type": "station",
+      "id": "8012666",
+      "name": "Potsdam Hbf",
       "location": {
         "type": "location",
-        "id": "748326",
-        "latitude": 52.390985,
-        "longitude": 13.065758
+        "id": "8012666",
+        "latitude": 52.391551,
+        "longitude": 13.066711
       },
       "products": {
         "nationalExpress": true,
@@ -734,881 +655,66 @@
         "subway": false,
         "tram": true,
         "taxi": false
-      },
-      "station": {
-        "type": "station",
-        "id": "8012666",
-        "name": "Potsdam Hbf",
-        "location": {
-          "type": "location",
-          "id": "8012666",
-          "latitude": 52.391551,
-          "longitude": 13.066711
-        },
-        "products": {
-          "nationalExpress": true,
-          "national": true,
-          "regionalExp": false,
-          "regional": true,
-          "suburban": true,
-          "bus": true,
-          "ferry": false,
-          "subway": false,
-          "tram": true,
-          "taxi": false
-        }
       }
     },
-    "when": "2024-10-22T09:07:00+02:00",
-    "plannedWhen": "2024-10-22T09:07:00+02:00",
+    "when": "2024-10-22T10:07:00+02:00",
+    "plannedWhen": "2024-10-22T10:07:00+02:00",
     "delay": 0,
-    "platform": null,
-    "plannedPlatform": null,
+    "platform": "3",
+    "plannedPlatform": "3",
     "prognosisType": "prognosed",
-    "direction": "Kirschallee, Potsdam",
+    "direction": "Brandenburg Hbf",
     "provenance": null,
     "line": {
       "type": "line",
-      "id": "8-vbbvit-92",
-      "fahrtNr": "3256",
-      "name": "STR 92",
+      "id": "re-1",
+      "fahrtNr": "73767",
+      "name": "RE 1",
       "public": true,
-      "adminCode": "vbbVIT",
-      "productName": "STR",
+      "adminCode": "OWRE__",
+      "productName": "RE",
       "mode": "train",
-      "product": "tram",
+      "product": "regional",
       "operator": {
         "type": "operator",
-        "id": "nahreisezug",
-        "name": "Nahreisezug"
-      }
+        "id": "ostdeutsche-eisenbahn-gmbh",
+        "name": "Ostdeutsche Eisenbahn GmbH"
+      },
+      "additionalName": "RE 1"
     },
     "remarks": [],
     "origin": null,
     "destination": {
-      "type": "stop",
-      "id": "748344",
-      "name": "Kirschallee, Potsdam",
+      "type": "station",
+      "id": "8010060",
+      "name": "Brandenburg Hbf",
       "location": {
         "type": "location",
-        "id": "748344",
-        "latitude": 52.41379,
-        "longitude": 13.032318
-      },
-      "products": {
-        "nationalExpress": false,
-        "national": false,
-        "regionalExp": false,
-        "regional": false,
-        "suburban": false,
-        "bus": true,
-        "ferry": false,
-        "subway": false,
-        "tram": true,
-        "taxi": false
-      }
-    }
-  },
-  {
-    "tripId": "2|#VN#1#ST#1729107992#PI#0#ZI#1563227#TA#0#DA#221024#1S#748326#1T#907#LS#735284#LT#952#PU#80#RT#1#CA#Bus#ZE#631#ZB#Bus  631#PC#5#FR#748326#FT#907#TO#735284#TT#952#",
-    "stop": {
-      "type": "stop",
-      "id": "748326",
-      "name": "Hauptbahnhof (S), Potsdam",
-      "location": {
-        "type": "location",
-        "id": "748326",
-        "latitude": 52.390985,
-        "longitude": 13.065758
+        "id": "8010060",
+        "latitude": 52.400756,
+        "longitude": 12.566416
       },
       "products": {
         "nationalExpress": true,
         "national": true,
         "regionalExp": false,
         "regional": true,
-        "suburban": true,
-        "bus": true,
-        "ferry": false,
-        "subway": false,
-        "tram": true,
-        "taxi": false
-      },
-      "station": {
-        "type": "station",
-        "id": "8012666",
-        "name": "Potsdam Hbf",
-        "location": {
-          "type": "location",
-          "id": "8012666",
-          "latitude": 52.391551,
-          "longitude": 13.066711
-        },
-        "products": {
-          "nationalExpress": true,
-          "national": true,
-          "regionalExp": false,
-          "regional": true,
-          "suburban": true,
-          "bus": true,
-          "ferry": false,
-          "subway": false,
-          "tram": true,
-          "taxi": false
-        }
-      }
-    },
-    "when": "2024-10-22T09:07:00+02:00",
-    "plannedWhen": "2024-10-22T09:07:00+02:00",
-    "delay": 0,
-    "platform": null,
-    "plannedPlatform": null,
-    "prognosisType": "prognosed",
-    "direction": "Werder Bahnhof",
-    "provenance": null,
-    "line": {
-      "type": "line",
-      "id": "5-vbbrpm-631",
-      "fahrtNr": "8121",
-      "name": "Bus 631",
-      "public": true,
-      "adminCode": "vbbRPM",
-      "productName": "Bus",
-      "mode": "bus",
-      "product": "bus",
-      "operator": {
-        "type": "operator",
-        "id": "nahreisezug",
-        "name": "Nahreisezug"
-      }
-    },
-    "remarks": [],
-    "origin": null,
-    "destination": {
-      "type": "stop",
-      "id": "735284",
-      "name": "Bahnhof, Werder (Havel)",
-      "location": {
-        "type": "location",
-        "id": "735284",
-        "latitude": 52.392666,
-        "longitude": 12.926102
-      },
-      "products": {
-        "nationalExpress": false,
-        "national": false,
-        "regionalExp": false,
-        "regional": true,
         "suburban": false,
         "bus": true,
         "ferry": false,
         "subway": false,
-        "tram": false,
-        "taxi": false
-      },
-      "station": {
-        "type": "station",
-        "id": "8010373",
-        "name": "Werder(Havel)",
-        "location": {
-          "type": "location",
-          "id": "8010373",
-          "latitude": 52.392953,
-          "longitude": 12.926515
-        },
-        "products": {
-          "nationalExpress": false,
-          "national": false,
-          "regionalExp": false,
-          "regional": true,
-          "suburban": false,
-          "bus": true,
-          "ferry": false,
-          "subway": false,
-          "tram": false,
-          "taxi": false
-        }
-      }
-    }
-  },
-  {
-    "tripId": "2|#VN#1#ST#1729107992#PI#0#ZI#1957072#TA#0#DA#221024#1S#748326#1T#907#LS#360032#LT#1000#PU#80#RT#1#CA#Bus#ZE#604#ZB#Bus  604#PC#5#FR#748326#FT#907#TO#360032#TT#1000#",
-    "stop": {
-      "type": "stop",
-      "id": "748326",
-      "name": "Hauptbahnhof (S), Potsdam",
-      "location": {
-        "type": "location",
-        "id": "748326",
-        "latitude": 52.390985,
-        "longitude": 13.065758
-      },
-      "products": {
-        "nationalExpress": true,
-        "national": true,
-        "regionalExp": false,
-        "regional": true,
-        "suburban": true,
-        "bus": true,
-        "ferry": false,
-        "subway": false,
         "tram": true,
-        "taxi": false
-      },
-      "station": {
-        "type": "station",
-        "id": "8012666",
-        "name": "Potsdam Hbf",
-        "location": {
-          "type": "location",
-          "id": "8012666",
-          "latitude": 52.391551,
-          "longitude": 13.066711
-        },
-        "products": {
-          "nationalExpress": true,
-          "national": true,
-          "regionalExp": false,
-          "regional": true,
-          "suburban": true,
-          "bus": true,
-          "ferry": false,
-          "subway": false,
-          "tram": true,
-          "taxi": false
-        }
-      }
-    },
-    "when": "2024-10-22T09:07:00+02:00",
-    "plannedWhen": "2024-10-22T09:07:00+02:00",
-    "delay": null,
-    "platform": null,
-    "plannedPlatform": null,
-    "prognosisType": null,
-    "direction": "Bahnhof/Süd, Falkensee",
-    "provenance": null,
-    "line": {
-      "type": "line",
-      "id": "5-vbbhvg-604",
-      "fahrtNr": "1806",
-      "name": "Bus 604",
-      "public": true,
-      "adminCode": "vbbHVG",
-      "productName": "Bus",
-      "mode": "bus",
-      "product": "bus",
-      "operator": {
-        "type": "operator",
-        "id": "nahreisezug",
-        "name": "Nahreisezug"
-      }
-    },
-    "remarks": [],
-    "origin": null,
-    "destination": {
-      "type": "stop",
-      "id": "360032",
-      "name": "Bahnhof/Süd, Falkensee",
-      "location": {
-        "type": "location",
-        "id": "360032",
-        "latitude": 52.559263,
-        "longitude": 13.090218
-      },
-      "products": {
-        "nationalExpress": false,
-        "national": false,
-        "regionalExp": false,
-        "regional": true,
-        "suburban": false,
-        "bus": true,
-        "ferry": false,
-        "subway": false,
-        "tram": false,
-        "taxi": false
-      },
-      "station": {
-        "type": "station",
-        "id": "8013479",
-        "name": "Falkensee",
-        "location": {
-          "type": "location",
-          "id": "8013479",
-          "latitude": 52.559802,
-          "longitude": 13.089238
-        },
-        "products": {
-          "nationalExpress": false,
-          "national": false,
-          "regionalExp": false,
-          "regional": true,
-          "suburban": false,
-          "bus": true,
-          "ferry": false,
-          "subway": false,
-          "tram": false,
-          "taxi": false
-        }
-      }
-    }
-  },
-  {
-    "tripId": "2|#VN#1#ST#1729107992#PI#0#ZI#1984619#TA#1#DA#221024#1S#736273#1T#730#LS#736273#LT#914#PU#80#RT#1#CA#Bus#ZE#694#ZB#Bus  694#PC#5#FR#736273#FT#730#TO#736273#TT#914#",
-    "stop": {
-      "type": "stop",
-      "id": "748326",
-      "name": "Hauptbahnhof (S), Potsdam",
-      "location": {
-        "type": "location",
-        "id": "748326",
-        "latitude": 52.390985,
-        "longitude": 13.065758
-      },
-      "products": {
-        "nationalExpress": true,
-        "national": true,
-        "regionalExp": false,
-        "regional": true,
-        "suburban": true,
-        "bus": true,
-        "ferry": false,
-        "subway": false,
-        "tram": true,
-        "taxi": false
-      },
-      "station": {
-        "type": "station",
-        "id": "8012666",
-        "name": "Potsdam Hbf",
-        "location": {
-          "type": "location",
-          "id": "8012666",
-          "latitude": 52.391551,
-          "longitude": 13.066711
-        },
-        "products": {
-          "nationalExpress": true,
-          "national": true,
-          "regionalExp": false,
-          "regional": true,
-          "suburban": true,
-          "bus": true,
-          "ferry": false,
-          "subway": false,
-          "tram": true,
-          "taxi": false
-        }
-      }
-    },
-    "when": "2024-10-22T09:08:00+02:00",
-    "plannedWhen": "2024-10-22T09:04:00+02:00",
-    "delay": 240,
-    "platform": null,
-    "plannedPlatform": null,
-    "prognosisType": "prognosed",
-    "direction": "Küsselstr., Potsdam",
-    "provenance": null,
-    "line": {
-      "type": "line",
-      "id": "5-vbbvib-694",
-      "fahrtNr": "625",
-      "name": "Bus 694",
-      "public": true,
-      "adminCode": "vbbVIB",
-      "productName": "Bus",
-      "mode": "bus",
-      "product": "bus",
-      "operator": {
-        "type": "operator",
-        "id": "nahreisezug",
-        "name": "Nahreisezug"
-      }
-    },
-    "remarks": [],
-    "origin": null,
-    "destination": {
-      "type": "stop",
-      "id": "736273",
-      "name": "Küsselstr., Potsdam",
-      "location": {
-        "type": "location",
-        "id": "736273",
-        "latitude": 52.387821,
-        "longitude": 13.043779
-      },
-      "products": {
-        "nationalExpress": false,
-        "national": false,
-        "regionalExp": false,
-        "regional": false,
-        "suburban": false,
-        "bus": true,
-        "ferry": false,
-        "subway": false,
-        "tram": false,
-        "taxi": false
+        "taxi": true
       }
     },
     "currentTripPosition": {
       "type": "location",
-      "latitude": 52.394014,
-      "longitude": 13.075179
+      "latitude": 52.51242,
+      "longitude": 13.424077
     }
   },
   {
-    "tripId": "2|#VN#1#ST#1729107992#PI#0#ZI#1560334#TA#9#DA#221024#1S#748326#1T#908#LS#727379#LT#958#PU#80#RT#1#CA#Bus#ZE#601#ZB#Bus  601#PC#5#FR#748326#FT#908#TO#727379#TT#958#",
-    "stop": {
-      "type": "stop",
-      "id": "748326",
-      "name": "Hauptbahnhof (S), Potsdam",
-      "location": {
-        "type": "location",
-        "id": "748326",
-        "latitude": 52.390985,
-        "longitude": 13.065758
-      },
-      "products": {
-        "nationalExpress": true,
-        "national": true,
-        "regionalExp": false,
-        "regional": true,
-        "suburban": true,
-        "bus": true,
-        "ferry": false,
-        "subway": false,
-        "tram": true,
-        "taxi": false
-      },
-      "station": {
-        "type": "station",
-        "id": "8012666",
-        "name": "Potsdam Hbf",
-        "location": {
-          "type": "location",
-          "id": "8012666",
-          "latitude": 52.391551,
-          "longitude": 13.066711
-        },
-        "products": {
-          "nationalExpress": true,
-          "national": true,
-          "regionalExp": false,
-          "regional": true,
-          "suburban": true,
-          "bus": true,
-          "ferry": false,
-          "subway": false,
-          "tram": true,
-          "taxi": false
-        }
-      }
-    },
-    "when": "2024-10-22T09:08:00+02:00",
-    "plannedWhen": "2024-10-22T09:08:00+02:00",
-    "delay": null,
-    "platform": null,
-    "plannedPlatform": null,
-    "prognosisType": null,
-    "direction": "S Teltow Stadt",
-    "provenance": null,
-    "line": {
-      "type": "line",
-      "id": "5-vbbrpm-601",
-      "fahrtNr": "7240",
-      "name": "Bus 601",
-      "public": true,
-      "adminCode": "vbbRPM",
-      "productName": "Bus",
-      "mode": "bus",
-      "product": "bus",
-      "operator": {
-        "type": "operator",
-        "id": "nahreisezug",
-        "name": "Nahreisezug"
-      }
-    },
-    "remarks": [],
-    "origin": null,
-    "destination": {
-      "type": "stop",
-      "id": "727379",
-      "name": "Teltow Stadt (S)/Gonfrevillestr., Teltow",
-      "location": {
-        "type": "location",
-        "id": "727379",
-        "latitude": 52.396999,
-        "longitude": 13.274703
-      },
-      "products": {
-        "nationalExpress": false,
-        "national": false,
-        "regionalExp": false,
-        "regional": true,
-        "suburban": true,
-        "bus": true,
-        "ferry": false,
-        "subway": false,
-        "tram": false,
-        "taxi": false
-      },
-      "station": {
-        "type": "station",
-        "id": "8080450",
-        "name": "Teltow Stadt",
-        "location": {
-          "type": "location",
-          "id": "8080450",
-          "latitude": 52.396846,
-          "longitude": 13.276483
-        },
-        "products": {
-          "nationalExpress": false,
-          "national": false,
-          "regionalExp": false,
-          "regional": true,
-          "suburban": true,
-          "bus": true,
-          "ferry": false,
-          "subway": false,
-          "tram": false,
-          "taxi": false
-        }
-      }
-    }
-  },
-  {
-    "tripId": "2|#VN#1#ST#1729107992#PI#0#ZI#1521688#TA#0#DA#221024#1S#748344#1T#850#LS#736119#LT#916#PU#80#RT#1#CA#STR#ZE#92#ZB#STR   92#PC#8#FR#748344#FT#850#TO#736119#TT#916#",
-    "stop": {
-      "type": "stop",
-      "id": "748326",
-      "name": "Hauptbahnhof (S), Potsdam",
-      "location": {
-        "type": "location",
-        "id": "748326",
-        "latitude": 52.390985,
-        "longitude": 13.065758
-      },
-      "products": {
-        "nationalExpress": true,
-        "national": true,
-        "regionalExp": false,
-        "regional": true,
-        "suburban": true,
-        "bus": true,
-        "ferry": false,
-        "subway": false,
-        "tram": true,
-        "taxi": false
-      },
-      "station": {
-        "type": "station",
-        "id": "8012666",
-        "name": "Potsdam Hbf",
-        "location": {
-          "type": "location",
-          "id": "8012666",
-          "latitude": 52.391551,
-          "longitude": 13.066711
-        },
-        "products": {
-          "nationalExpress": true,
-          "national": true,
-          "regionalExp": false,
-          "regional": true,
-          "suburban": true,
-          "bus": true,
-          "ferry": false,
-          "subway": false,
-          "tram": true,
-          "taxi": false
-        }
-      }
-    },
-    "when": "2024-10-22T09:09:00+02:00",
-    "plannedWhen": "2024-10-22T09:08:00+02:00",
-    "delay": 60,
-    "platform": null,
-    "plannedPlatform": null,
-    "prognosisType": "prognosed",
-    "direction": "Bisamkiez, Potsdam",
-    "provenance": null,
-    "line": {
-      "type": "line",
-      "id": "8-vbbvit-92",
-      "fahrtNr": "3471",
-      "name": "STR 92",
-      "public": true,
-      "adminCode": "vbbVIT",
-      "productName": "STR",
-      "mode": "train",
-      "product": "tram",
-      "operator": {
-        "type": "operator",
-        "id": "nahreisezug",
-        "name": "Nahreisezug"
-      }
-    },
-    "remarks": [],
-    "origin": null,
-    "destination": {
-      "type": "stop",
-      "id": "736119",
-      "name": "Bisamkiez, Potsdam",
-      "location": {
-        "type": "location",
-        "id": "736119",
-        "latitude": 52.373384,
-        "longitude": 13.101086
-      },
-      "products": {
-        "nationalExpress": false,
-        "national": false,
-        "regionalExp": false,
-        "regional": false,
-        "suburban": false,
-        "bus": false,
-        "ferry": false,
-        "subway": false,
-        "tram": true,
-        "taxi": false
-      }
-    },
-    "currentTripPosition": {
-      "type": "location",
-      "latitude": 52.401601,
-      "longitude": 13.057758
-    }
-  },
-  {
-    "tripId": "2|#VN#1#ST#1729107992#PI#0#ZI#1523340#TA#0#DA#221024#1S#735283#1T#857#LS#736110#LT#920#PU#80#RT#1#CA#STR#ZE#93#ZB#STR   93#PC#8#FR#735283#FT#857#TO#736110#TT#920#",
-    "stop": {
-      "type": "stop",
-      "id": "748326",
-      "name": "Hauptbahnhof (S), Potsdam",
-      "location": {
-        "type": "location",
-        "id": "748326",
-        "latitude": 52.390985,
-        "longitude": 13.065758
-      },
-      "products": {
-        "nationalExpress": true,
-        "national": true,
-        "regionalExp": false,
-        "regional": true,
-        "suburban": true,
-        "bus": true,
-        "ferry": false,
-        "subway": false,
-        "tram": true,
-        "taxi": false
-      },
-      "station": {
-        "type": "station",
-        "id": "8012666",
-        "name": "Potsdam Hbf",
-        "location": {
-          "type": "location",
-          "id": "8012666",
-          "latitude": 52.391551,
-          "longitude": 13.066711
-        },
-        "products": {
-          "nationalExpress": true,
-          "national": true,
-          "regionalExp": false,
-          "regional": true,
-          "suburban": true,
-          "bus": true,
-          "ferry": false,
-          "subway": false,
-          "tram": true,
-          "taxi": false
-        }
-      }
-    },
-    "when": "2024-10-22T09:09:00+02:00",
-    "plannedWhen": "2024-10-22T09:08:00+02:00",
-    "delay": 60,
-    "platform": null,
-    "plannedPlatform": null,
-    "prognosisType": "prognosed",
-    "direction": "Glienicker Brücke, Potsdam",
-    "provenance": null,
-    "line": {
-      "type": "line",
-      "id": "8-vbbvit-93",
-      "fahrtNr": "3616",
-      "name": "STR 93",
-      "public": true,
-      "adminCode": "vbbVIT",
-      "productName": "STR",
-      "mode": "train",
-      "product": "tram",
-      "operator": {
-        "type": "operator",
-        "id": "nahreisezug",
-        "name": "Nahreisezug"
-      }
-    },
-    "remarks": [],
-    "origin": null,
-    "destination": {
-      "type": "stop",
-      "id": "736110",
-      "name": "Glienicker Brücke, Potsdam",
-      "location": {
-        "type": "location",
-        "id": "736110",
-        "latitude": 52.412631,
-        "longitude": 13.086155
-      },
-      "products": {
-        "nationalExpress": false,
-        "national": false,
-        "regionalExp": false,
-        "regional": false,
-        "suburban": false,
-        "bus": true,
-        "ferry": false,
-        "subway": false,
-        "tram": true,
-        "taxi": false
-      }
-    },
-    "currentTripPosition": {
-      "type": "location",
-      "latitude": 52.375532,
-      "longitude": 13.085265
-    }
-  },
-  {
-    "tripId": "2|#VN#1#ST#1729107992#PI#0#ZI#1516308#TA#1#DA#221024#1S#736087#1T#851#LS#735283#LT#920#PU#80#RT#1#CA#STR#ZE#91#ZB#STR   91#PC#8#FR#736087#FT#851#TO#735283#TT#920#",
-    "stop": {
-      "type": "stop",
-      "id": "748326",
-      "name": "Hauptbahnhof (S), Potsdam",
-      "location": {
-        "type": "location",
-        "id": "748326",
-        "latitude": 52.390985,
-        "longitude": 13.065758
-      },
-      "products": {
-        "nationalExpress": true,
-        "national": true,
-        "regionalExp": false,
-        "regional": true,
-        "suburban": true,
-        "bus": true,
-        "ferry": false,
-        "subway": false,
-        "tram": true,
-        "taxi": false
-      },
-      "station": {
-        "type": "station",
-        "id": "8012666",
-        "name": "Potsdam Hbf",
-        "location": {
-          "type": "location",
-          "id": "8012666",
-          "latitude": 52.391551,
-          "longitude": 13.066711
-        },
-        "products": {
-          "nationalExpress": true,
-          "national": true,
-          "regionalExp": false,
-          "regional": true,
-          "suburban": true,
-          "bus": true,
-          "ferry": false,
-          "subway": false,
-          "tram": true,
-          "taxi": false
-        }
-      }
-    },
-    "when": "2024-10-22T09:10:00+02:00",
-    "plannedWhen": "2024-10-22T09:09:00+02:00",
-    "delay": 60,
-    "platform": null,
-    "plannedPlatform": null,
-    "prognosisType": "prognosed",
-    "direction": "Rehbrücke Bahnhof, Potsdam",
-    "provenance": null,
-    "line": {
-      "type": "line",
-      "id": "8-vbbvit-91",
-      "fahrtNr": "2970",
-      "name": "STR 91",
-      "public": true,
-      "adminCode": "vbbVIT",
-      "productName": "STR",
-      "mode": "train",
-      "product": "tram",
-      "operator": {
-        "type": "operator",
-        "id": "nahreisezug",
-        "name": "Nahreisezug"
-      }
-    },
-    "remarks": [],
-    "origin": null,
-    "destination": {
-      "type": "stop",
-      "id": "735283",
-      "name": "Rehbrücke Bahnhof, Potsdam",
-      "location": {
-        "type": "location",
-        "id": "735283",
-        "latitude": 52.359846,
-        "longitude": 13.098065
-      },
-      "products": {
-        "nationalExpress": false,
-        "national": false,
-        "regionalExp": false,
-        "regional": true,
-        "suburban": false,
-        "bus": true,
-        "ferry": false,
-        "subway": false,
-        "tram": true,
-        "taxi": false
-      },
-      "station": {
-        "type": "station",
-        "id": "8012733",
-        "name": "Potsdam-Rehbrücke",
-        "location": {
-          "type": "location",
-          "id": "8012733",
-          "latitude": 52.358471,
-          "longitude": 13.098308
-        },
-        "products": {
-          "nationalExpress": false,
-          "national": false,
-          "regionalExp": false,
-          "regional": true,
-          "suburban": false,
-          "bus": true,
-          "ferry": false,
-          "subway": false,
-          "tram": true,
-          "taxi": false
-        }
-      }
-    },
-    "currentTripPosition": {
-      "type": "location",
-      "latitude": 52.398392,
-      "longitude": 13.050216
-    }
-  },
-  {
-    "tripId": "2|#VN#1#ST#1729107992#PI#0#ZI#313858#TA#5#DA#221024#1S#8071523#1T#910#LS#8010193#LT#1050#PU#80#RT#1#CA#Bsv#ZE#RB22#ZB#Bus RB22#PC#3#FR#8071523#FT#910#TO#8010193#TT#1050#",
+    "tripId": "2|#VN#1#ST#1729107992#PI#0#ZI#313858#TA#6#DA#221024#1S#8071523#1T#1010#LS#8010193#LT#1150#PU#80#RT#1#CA#Bsv#ZE#RB22#ZB#Bus RB22#PC#3#FR#8071523#FT#1010#TO#8010193#TT#1150#",
     "stop": {
       "type": "stop",
       "id": "8071523",
@@ -1632,8 +738,8 @@
         "taxi": false
       }
     },
-    "when": "2024-10-22T09:10:00+02:00",
-    "plannedWhen": "2024-10-22T09:10:00+02:00",
+    "when": "2024-10-22T10:10:00+02:00",
+    "plannedWhen": "2024-10-22T10:10:00+02:00",
     "delay": null,
     "platform": null,
     "plannedPlatform": null,
@@ -1643,7 +749,7 @@
     "line": {
       "type": "line",
       "id": "3-bb-rb22",
-      "fahrtNr": "48112",
+      "fahrtNr": "48114",
       "name": "Bus RB22",
       "public": true,
       "adminCode": "BB____",
@@ -1683,7 +789,7 @@
     }
   },
   {
-    "tripId": "2|#VN#1#ST#1729107992#PI#0#ZI#668897#TA#0#DA#221024#1S#8010060#1T#845#LS#8011162#LT#950#PU#80#RT#1#CA#DPN#ZE#73808#ZB#RE 73808#PC#3#FR#8010060#FT#845#TO#8011162#TT#950#",
+    "tripId": "2|#VN#1#ST#1729107992#PI#0#ZI#307585#TA#2#DA#221024#1S#8013481#1T#1002#LS#8011695#LT#1020#PU#80#RT#1#CA#RB#ZE#18111#ZB#RB 18111#PC#3#FR#8013481#FT#1002#TO#8011695#TT#1020#",
     "stop": {
       "type": "station",
       "id": "8012666",
@@ -1707,18 +813,175 @@
         "taxi": false
       }
     },
-    "when": "2024-10-22T09:10:00+02:00",
-    "plannedWhen": "2024-10-22T09:10:00+02:00",
+    "when": "2024-10-22T10:17:00+02:00",
+    "plannedWhen": "2024-10-22T10:17:00+02:00",
+    "delay": null,
+    "platform": "4",
+    "plannedPlatform": "4",
+    "prognosisType": null,
+    "direction": "Potsdam Griebnitzsee",
+    "provenance": null,
+    "line": {
+      "type": "line",
+      "id": "rb-22",
+      "fahrtNr": "18111",
+      "name": "RB 22",
+      "public": true,
+      "adminCode": "800165",
+      "productName": "RB",
+      "mode": "train",
+      "product": "regional",
+      "operator": {
+        "type": "operator",
+        "id": "db-regio-ag-nordost",
+        "name": "DB Regio AG Nordost"
+      },
+      "additionalName": "RB 22"
+    },
+    "remarks": [],
+    "origin": null,
+    "destination": {
+      "type": "station",
+      "id": "8011695",
+      "name": "Potsdam Griebnitzsee",
+      "location": {
+        "type": "location",
+        "id": "8011695",
+        "latitude": 52.394437,
+        "longitude": 13.128728
+      },
+      "products": {
+        "nationalExpress": false,
+        "national": false,
+        "regionalExp": false,
+        "regional": true,
+        "suburban": true,
+        "bus": true,
+        "ferry": false,
+        "subway": false,
+        "tram": false,
+        "taxi": false
+      }
+    }
+  },
+  {
+    "tripId": "2|#VN#1#ST#1729107992#PI#0#ZI#307791#TA#0#DA#221024#1S#8011201#1T#913#LS#8013481#LT#1028#PU#80#RT#1#CA#RB#ZE#18148#ZB#RB 18148#PC#3#FR#8011201#FT#913#TO#8013481#TT#1028#",
+    "stop": {
+      "type": "station",
+      "id": "8012666",
+      "name": "Potsdam Hbf",
+      "location": {
+        "type": "location",
+        "id": "8012666",
+        "latitude": 52.391551,
+        "longitude": 13.066711
+      },
+      "products": {
+        "nationalExpress": true,
+        "national": true,
+        "regionalExp": false,
+        "regional": true,
+        "suburban": true,
+        "bus": true,
+        "ferry": false,
+        "subway": false,
+        "tram": true,
+        "taxi": false
+      }
+    },
+    "when": "2024-10-22T10:18:00+02:00",
+    "plannedWhen": "2024-10-22T10:18:00+02:00",
     "delay": 0,
-    "platform": "2",
+    "platform": "3",
+    "plannedPlatform": "3",
+    "prognosisType": "prognosed",
+    "direction": "Golm",
+    "provenance": null,
+    "line": {
+      "type": "line",
+      "id": "rb-23",
+      "fahrtNr": "18148",
+      "name": "RB 23",
+      "public": true,
+      "adminCode": "800165",
+      "productName": "RB",
+      "mode": "train",
+      "product": "regional",
+      "operator": {
+        "type": "operator",
+        "id": "db-regio-ag-nordost",
+        "name": "DB Regio AG Nordost"
+      },
+      "additionalName": "RB 23"
+    },
+    "remarks": [],
+    "origin": null,
+    "destination": {
+      "type": "station",
+      "id": "8013481",
+      "name": "Golm",
+      "location": {
+        "type": "location",
+        "id": "8013481",
+        "latitude": 52.408532,
+        "longitude": 12.971506
+      },
+      "products": {
+        "nationalExpress": false,
+        "national": false,
+        "regionalExp": false,
+        "regional": true,
+        "suburban": false,
+        "bus": true,
+        "ferry": false,
+        "subway": false,
+        "tram": false,
+        "taxi": false
+      }
+    },
+    "currentTripPosition": {
+      "type": "location",
+      "latitude": 52.504671,
+      "longitude": 13.470327
+    }
+  },
+  {
+    "tripId": "2|#VN#1#ST#1729107992#PI#0#ZI#668355#TA#0#DA#221024#1S#8010224#1T#912#LS#8010113#LT#1205#PU#80#RT#1#CA#DPN#ZE#73724#ZB#RE 73724#PC#3#FR#8010224#FT#912#TO#8010113#TT#1205#",
+    "stop": {
+      "type": "station",
+      "id": "8012666",
+      "name": "Potsdam Hbf",
+      "location": {
+        "type": "location",
+        "id": "8012666",
+        "latitude": 52.391551,
+        "longitude": 13.066711
+      },
+      "products": {
+        "nationalExpress": true,
+        "national": true,
+        "regionalExp": false,
+        "regional": true,
+        "suburban": true,
+        "bus": true,
+        "ferry": false,
+        "subway": false,
+        "tram": true,
+        "taxi": false
+      }
+    },
+    "when": "2024-10-22T10:31:00+02:00",
+    "plannedWhen": "2024-10-22T10:31:00+02:00",
+    "delay": 0,
+    "platform": "4",
     "plannedPlatform": "4",
     "prognosisType": "prognosed",
-    "direction": "Berlin Ostkreuz",
+    "direction": "Frankfurt(Oder)",
     "provenance": null,
     "line": {
       "type": "line",
       "id": "re-1",
-      "fahrtNr": "73808",
+      "fahrtNr": "73724",
       "name": "RE 1",
       "public": true,
       "adminCode": "OWRE__",
@@ -1736,39 +999,44 @@
     "origin": null,
     "destination": {
       "type": "station",
-      "id": "8011162",
-      "name": "Berlin Ostkreuz",
+      "id": "8010113",
+      "name": "Frankfurt(Oder)",
       "location": {
         "type": "location",
-        "id": "8011162",
-        "latitude": 52.504689,
-        "longitude": 13.470497
+        "id": "8010113",
+        "latitude": 52.335863,
+        "longitude": 14.547073
       },
       "products": {
-        "nationalExpress": true,
+        "nationalExpress": false,
         "national": true,
-        "regionalExp": false,
+        "regionalExp": true,
         "regional": true,
-        "suburban": true,
+        "suburban": false,
         "bus": true,
         "ferry": false,
         "subway": false,
-        "tram": false,
-        "taxi": false
+        "tram": true,
+        "taxi": true
       }
+    },
+    "currentTripPosition": {
+      "type": "location",
+      "latitude": 52.300976,
+      "longitude": 11.900747
     }
   },
   {
-    "tripId": "2|#VN#1#ST#1729107992#PI#0#ZI#1563860#TA#0#DA#221024#1S#748326#1T#910#LS#735667#LT#958#PU#80#RT#1#CA#Bus#ZE#643#ZB#Bus  643#PC#5#FR#748326#FT#910#TO#735667#TT#958#",
+    "tripId": "2|#VN#1#ST#1729107992#PI#0#ZI#668377#TA#0#DA#221024#1S#8011471#1T#836#LS#8010224#LT#1147#PU#80#RT#1#CA#DPN#ZE#73727#ZB#RE 73727#PC#3#FR#8011471#FT#836#TO#8010224#TT#1147#",
     "stop": {
-      "type": "stop",
-      "id": "748326",
-      "name": "Hauptbahnhof (S), Potsdam",
+      "type": "station",
+      "id": "8012666",
+      "name": "Potsdam Hbf",
       "location": {
         "type": "location",
-        "id": "748326",
-        "latitude": 52.390985,
-        "longitude": 13.065758
+        "id": "8012666",
+        "latitude": 52.391551,
+        "longitude": 13.066711
       },
       "products": {
         "nationalExpress": true,
@@ -1781,292 +1049,51 @@
         "subway": false,
         "tram": true,
         "taxi": false
-      },
-      "station": {
-        "type": "station",
-        "id": "8012666",
-        "name": "Potsdam Hbf",
-        "location": {
-          "type": "location",
-          "id": "8012666",
-          "latitude": 52.391551,
-          "longitude": 13.066711
-        },
-        "products": {
-          "nationalExpress": true,
-          "national": true,
-          "regionalExp": false,
-          "regional": true,
-          "suburban": true,
-          "bus": true,
-          "ferry": false,
-          "subway": false,
-          "tram": true,
-          "taxi": false
-        }
       }
     },
-    "when": "2024-10-22T09:10:00+02:00",
-    "plannedWhen": "2024-10-22T09:10:00+02:00",
+    "when": "2024-10-22T10:31:00+02:00",
+    "plannedWhen": "2024-10-22T10:31:00+02:00",
     "delay": 0,
-    "platform": null,
-    "plannedPlatform": null,
+    "platform": "3",
+    "plannedPlatform": "3",
     "prognosisType": "prognosed",
-    "direction": "Beelitz",
+    "direction": "Magdeburg Hbf",
     "provenance": null,
     "line": {
       "type": "line",
-      "id": "5-vbbrpm-643",
-      "fahrtNr": "8323",
-      "name": "Bus 643",
+      "id": "re-1",
+      "fahrtNr": "73727",
+      "name": "RE 1",
       "public": true,
-      "adminCode": "vbbRPM",
-      "productName": "Bus",
-      "mode": "bus",
-      "product": "bus",
+      "adminCode": "OWRE__",
+      "productName": "RE",
+      "mode": "train",
+      "product": "regional",
       "operator": {
         "type": "operator",
-        "id": "nahreisezug",
-        "name": "Nahreisezug"
-      }
+        "id": "ostdeutsche-eisenbahn-gmbh",
+        "name": "Ostdeutsche Eisenbahn GmbH"
+      },
+      "additionalName": "RE 1"
     },
     "remarks": [],
     "origin": null,
     "destination": {
       "type": "station",
-      "id": "735667",
-      "name": "Liebknechtpark, Beelitz (Mark)",
+      "id": "8010224",
+      "name": "Magdeburg Hbf",
       "location": {
         "type": "location",
-        "id": "735667",
-        "latitude": 52.23789,
-        "longitude": 12.963677
-      },
-      "products": {
-        "nationalExpress": false,
-        "national": false,
-        "regionalExp": false,
-        "regional": true,
-        "suburban": false,
-        "bus": true,
-        "ferry": false,
-        "subway": false,
-        "tram": false,
-        "taxi": false
-      }
-    }
-  },
-  {
-    "tripId": "2|#VN#1#ST#1729107992#PI#0#ZI#417058#TA#0#DA#221024#1S#8089184#1T#911#LS#8089188#LT#1026#PU#80#RT#1#CA#s#ZE#7#ZB#S      7#PC#4#FR#8089184#FT#911#TO#8089188#TT#1026#",
-    "stop": {
-      "type": "stop",
-      "id": "8089184",
-      "name": "Potsdam Hbf (S)",
-      "location": {
-        "type": "location",
-        "id": "8089184",
-        "latitude": 52.391713,
-        "longitude": 13.067727
+        "id": "8010224",
+        "latitude": 52.130495,
+        "longitude": 11.6269
       },
       "products": {
         "nationalExpress": true,
         "national": true,
-        "regionalExp": false,
+        "regionalExp": true,
         "regional": true,
         "suburban": true,
-        "bus": true,
-        "ferry": false,
-        "subway": false,
-        "tram": true,
-        "taxi": false
-      },
-      "station": {
-        "type": "station",
-        "id": "8012666",
-        "name": "Potsdam Hbf",
-        "location": {
-          "type": "location",
-          "id": "8012666",
-          "latitude": 52.391551,
-          "longitude": 13.066711
-        },
-        "products": {
-          "nationalExpress": true,
-          "national": true,
-          "regionalExp": false,
-          "regional": true,
-          "suburban": true,
-          "bus": true,
-          "ferry": false,
-          "subway": false,
-          "tram": true,
-          "taxi": false
-        }
-      }
-    },
-    "when": "2024-10-22T09:11:00+02:00",
-    "plannedWhen": "2024-10-22T09:11:00+02:00",
-    "delay": 0,
-    "platform": "7",
-    "plannedPlatform": "7",
-    "prognosisType": "prognosed",
-    "direction": "Ahrensfelde (S)",
-    "provenance": null,
-    "line": {
-      "type": "line",
-      "id": "4-08-7",
-      "fahrtNr": "7539",
-      "name": "S 7",
-      "public": true,
-      "adminCode": "08____",
-      "productName": "S",
-      "mode": "train",
-      "product": "suburban",
-      "operator": {
-        "type": "operator",
-        "id": "s-bahn-berlin",
-        "name": "S-Bahn Berlin"
-      }
-    },
-    "remarks": [],
-    "origin": null,
-    "destination": {
-      "type": "stop",
-      "id": "8089188",
-      "name": "Ahrensfelde (S)",
-      "location": {
-        "type": "location",
-        "id": "8089188",
-        "latitude": 52.571246,
-        "longitude": 13.565549
-      },
-      "products": {
-        "nationalExpress": false,
-        "national": false,
-        "regionalExp": false,
-        "regional": true,
-        "suburban": true,
-        "bus": true,
-        "ferry": false,
-        "subway": false,
-        "tram": false,
-        "taxi": false
-      },
-      "station": {
-        "type": "station",
-        "id": "8011003",
-        "name": "Ahrensfelde",
-        "location": {
-          "type": "location",
-          "id": "8011003",
-          "latitude": 52.572306,
-          "longitude": 13.566008
-        },
-        "products": {
-          "nationalExpress": false,
-          "national": false,
-          "regionalExp": false,
-          "regional": true,
-          "suburban": true,
-          "bus": true,
-          "ferry": false,
-          "subway": false,
-          "tram": false,
-          "taxi": false
-        }
-      }
-    }
-  },
-  {
-    "tripId": "2|#VN#1#ST#1729107992#PI#0#ZI#1527238#TA#1#DA#221024#1S#736251#1T#851#LS#728542#LT#933#PU#80#RT#1#CA#STR#ZE#96#ZB#STR   96#PC#8#FR#736251#FT#851#TO#728542#TT#933#",
-    "stop": {
-      "type": "stop",
-      "id": "748326",
-      "name": "Hauptbahnhof (S), Potsdam",
-      "location": {
-        "type": "location",
-        "id": "748326",
-        "latitude": 52.390985,
-        "longitude": 13.065758
-      },
-      "products": {
-        "nationalExpress": true,
-        "national": true,
-        "regionalExp": false,
-        "regional": true,
-        "suburban": true,
-        "bus": true,
-        "ferry": false,
-        "subway": false,
-        "tram": true,
-        "taxi": false
-      },
-      "station": {
-        "type": "station",
-        "id": "8012666",
-        "name": "Potsdam Hbf",
-        "location": {
-          "type": "location",
-          "id": "8012666",
-          "latitude": 52.391551,
-          "longitude": 13.066711
-        },
-        "products": {
-          "nationalExpress": true,
-          "national": true,
-          "regionalExp": false,
-          "regional": true,
-          "suburban": true,
-          "bus": true,
-          "ferry": false,
-          "subway": false,
-          "tram": true,
-          "taxi": false
-        }
-      }
-    },
-    "when": "2024-10-22T09:13:00+02:00",
-    "plannedWhen": "2024-10-22T09:12:00+02:00",
-    "delay": 60,
-    "platform": null,
-    "plannedPlatform": null,
-    "prognosisType": "prognosed",
-    "direction": "Campus Jungfernsee, Potsdam",
-    "provenance": null,
-    "line": {
-      "type": "line",
-      "id": "8-vbbvit-96",
-      "fahrtNr": "4041",
-      "name": "STR 96",
-      "public": true,
-      "adminCode": "vbbVIT",
-      "productName": "STR",
-      "mode": "train",
-      "product": "tram",
-      "operator": {
-        "type": "operator",
-        "id": "nahreisezug",
-        "name": "Nahreisezug"
-      }
-    },
-    "remarks": [],
-    "origin": null,
-    "destination": {
-      "type": "stop",
-      "id": "728542",
-      "name": "Campus Jungfernsee, Potsdam",
-      "location": {
-        "type": "location",
-        "id": "728542",
-        "latitude": 52.432353,
-        "longitude": 13.053506
-      },
-      "products": {
-        "nationalExpress": false,
-        "national": false,
-        "regionalExp": false,
-        "regional": false,
-        "suburban": false,
         "bus": true,
         "ferry": false,
         "subway": false,
@@ -2076,111 +1103,8 @@
     },
     "currentTripPosition": {
       "type": "location",
-      "latitude": 52.373411,
-      "longitude": 13.111405
-    }
-  },
-  {
-    "tripId": "2|#VN#1#ST#1729107992#PI#0#ZI#1529091#TA#4#DA#221024#1S#728542#1T#852#LS#736251#LT#934#PU#80#RT#1#CA#STR#ZE#96#ZB#STR   96#PC#8#FR#728542#FT#852#TO#736251#TT#934#",
-    "stop": {
-      "type": "stop",
-      "id": "748326",
-      "name": "Hauptbahnhof (S), Potsdam",
-      "location": {
-        "type": "location",
-        "id": "748326",
-        "latitude": 52.390985,
-        "longitude": 13.065758
-      },
-      "products": {
-        "nationalExpress": true,
-        "national": true,
-        "regionalExp": false,
-        "regional": true,
-        "suburban": true,
-        "bus": true,
-        "ferry": false,
-        "subway": false,
-        "tram": true,
-        "taxi": false
-      },
-      "station": {
-        "type": "station",
-        "id": "8012666",
-        "name": "Potsdam Hbf",
-        "location": {
-          "type": "location",
-          "id": "8012666",
-          "latitude": 52.391551,
-          "longitude": 13.066711
-        },
-        "products": {
-          "nationalExpress": true,
-          "national": true,
-          "regionalExp": false,
-          "regional": true,
-          "suburban": true,
-          "bus": true,
-          "ferry": false,
-          "subway": false,
-          "tram": true,
-          "taxi": false
-        }
-      }
-    },
-    "when": "2024-10-22T09:13:00+02:00",
-    "plannedWhen": "2024-10-22T09:12:00+02:00",
-    "delay": 60,
-    "platform": null,
-    "plannedPlatform": null,
-    "prognosisType": "prognosed",
-    "direction": "Marie-Juchacz-Str., Potsdam",
-    "provenance": null,
-    "line": {
-      "type": "line",
-      "id": "8-vbbvit-96",
-      "fahrtNr": "4221",
-      "name": "STR 96",
-      "public": true,
-      "adminCode": "vbbVIT",
-      "productName": "STR",
-      "mode": "train",
-      "product": "tram",
-      "operator": {
-        "type": "operator",
-        "id": "nahreisezug",
-        "name": "Nahreisezug"
-      }
-    },
-    "remarks": [],
-    "origin": null,
-    "destination": {
-      "type": "stop",
-      "id": "736251",
-      "name": "Marie-Juchacz-Str., Potsdam",
-      "location": {
-        "type": "location",
-        "id": "736251",
-        "latitude": 52.357824,
-        "longitude": 13.137465
-      },
-      "products": {
-        "nationalExpress": false,
-        "national": false,
-        "regionalExp": false,
-        "regional": false,
-        "suburban": false,
-        "bus": true,
-        "ferry": false,
-        "subway": false,
-        "tram": true,
-        "taxi": false
-      }
-    },
-    "currentTripPosition": {
-      "type": "location",
-      "latitude": 52.408586,
-      "longitude": 13.058639
+      "latitude": 52.445271,
+      "longitude": 13.716307
     }
   }
 ]
