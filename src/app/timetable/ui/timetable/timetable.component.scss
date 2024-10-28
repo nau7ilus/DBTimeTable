@@ -1,13 +1,12 @@
-$blue-bg: #0a1e6e;
-$text-color: #fff;
+$text-color: var(--text-color);
 
 html {
   height: 100%;
 }
 
 body {
-  background-color: $blue-bg;
-  color: $text-color;
+  background-color: var(--blue-bg);
+  color: var(--text-color);
 }
 
 .container {
@@ -35,7 +34,7 @@ header {
     align-items: center;
 
     h1 {
-      font-size: 1.5em;
+      font-size: 1.75em;
     }
 
     span {
@@ -53,11 +52,11 @@ section.timetable {
   margin-top: 3rem;
 
   .container div {
-    padding-bottom: 1rem;
-    border-bottom: solid 0.1px rgba($text-color, 0.5);
+    padding-bottom: 0.75rem;
+    border-bottom: solid 0.1px rgba(255, 255, 255, 0.5);
   }
 
-  .top {
+  .top div {
     display: flex;
     justify-content: end;
     flex-direction: column;
