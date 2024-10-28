@@ -1,1 +1,25 @@
-<p>timetable-entry works!</p>
+<div class="container">
+  <div>
+    <span class="train">{{trainEntry.line.name}} / {{trainEntry.line.fahrtNr}}</span>
+
+    <span class="time">
+      <span class="planned">{{plannedTime}}</span>
+      @if (trainEntry.delay) {
+      <div class="actual">{{actualTime}}</div>
+      }
+
+    </span>
+  </div>
+
+  <div>
+    <span class="via">Melle — Bünde(Westf) — Löhne(Westf) — Minden(Westf) — Hannover Hbf</span>
+    <span class="dest">{{trainEntry.destination.name}}</span>
+  </div>
+
+  <div>
+    <span class="track">{{trainEntry.platform}}</span>
+  </div>
+
+  <div></div>
+
+</div>
