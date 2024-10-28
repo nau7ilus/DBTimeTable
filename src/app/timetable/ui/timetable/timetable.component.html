@@ -17,22 +17,26 @@
 </header>
 
 <section class="timetable">
-  <div class="container">
+  <div class="container top">
     <!-- Table Top -->
-    <div class="top">
+    <div>
       <span>Zug / <i>Train</i></span>
       <span>Zeit / <i>Time</i></span>
     </div>
-    <div class="top">
+    <div>
       <span>Über / Via</span>
       <span>Ziel / Destination</span>
     </div>
-    <div class="top">
+    <div>
       <span>Gleis / Track</span>
     </div>
-
-    <div class="top"></div>
+    <div></div>
   </div>
 
+  @for (trainEntry of trainData; track trainEntry.tripId) {
+  <app-timetable-entry [trainEntry]="trainEntry"></app-timetable-entry>
+  } @empty {
+  <p>loading...</p>
+  }
 
 </section>
