@@ -52,6 +52,13 @@ type Line = {
 };
 
 export type TrainInfo = {
+type Remark = {
+  type: 'status';
+  code: null;
+  text: string;
+  summary?: string;
+}
+
   tripId: string;
   stop: Station;
   when: string;
@@ -63,7 +70,7 @@ export type TrainInfo = {
   direction: string;
   provenance: string | null;
   line: Line;
-  remarks: string[];
+  remarks: Remark[];
   origin: Station | null;
   destination: Station;
   currentTripPosition: Location;
@@ -82,6 +89,9 @@ export class TrainService {
     tram: false,
     suburban: false,
     duration: 60
+    duration: 60,
+    language: 'de',
+    remarks: true
   }
 
   constructor(private http: HttpClient) { }

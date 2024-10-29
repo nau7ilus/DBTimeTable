@@ -20,6 +20,13 @@
     <span class="track">{{trainEntry.platform}}</span>
   </div>
 
-  <div></div>
+  <div class="remarks">
+    <span>
+      @for (remark of trainEntry.remarks; track remark.text) {
+      +++ {{ remark.text }} +++
+      }
+    </span>
+
+  </div>
 
 </div>
