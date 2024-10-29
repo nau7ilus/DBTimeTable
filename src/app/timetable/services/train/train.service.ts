@@ -94,6 +94,10 @@ export type DepartureInfo = {
   currentTripPosition: Location;
 };
 
+type StopOver = {
+  stop: Station;
+} & ArrivalDepartureInfo;
+
 export type TripInfo = {
   id: string;
   realtimeDataUpdatedAt: number;
@@ -102,7 +106,7 @@ export type TripInfo = {
   reachable: boolean;
   line: Line;
   direction: string;
-  stopovers: Station[];
+  stopovers: StopOver[];
   remarks: Remark[];
 } & StopOverStation;
 
@@ -110,32 +114,42 @@ export type TripInfo = {
   providedIn: 'root'
 })
 export class TrainService {
-  private apiUrl = 'https://v5.db.transport.rest/stops';
-  private options = {
-    bus: false,
-    ferry: false,
-    taxi: false,
-    subway: false,
-    tram: false,
-    suburban: false,
-    duration: 60,
-    language: 'de',
-    remarks: true
-  }
+  protected apiUrl = 'https://v5.db.transport.rest';
 
   constructor(private http: HttpClient) { }
 
   getDepartures(stopId: string): Observable<DepartureInfo[]> {
-    const url = `${this.apiUrl}/${stopId}/departures?${this.toQueryString(this.options)}`;
-    return this.http.get<any>(url).pipe(
-      map(data => {
-        return data as DepartureInfo[];
-      }),
+    const options = {
+      bus: false,
+      ferry: false,
+      taxi: false,
+      subway: false,
+      tram: false,
+      suburban: false,
+      duration: 60,
+      language: 'de',
+      remarks: true
+    }
+    const requestUri = `${this.apiUrl}/stops/${stopId}/departures?${this.toQueryString(options)}`;
+    return this.http.get<any>(requestUri).pipe(
+      map(data => data as DepartureInfo[]),
+      // TODO: Code dublicate
       catchError(error => {
-        console.error('Fehler beim Datenabruf:', error);
+        console.error('Fehler beim Abruf der Zugdaten:', error);
         return throwError(() => new Error('Zugdaten können nicht abgerufen werden'));
-      })
-    );
+      }));
+  }
+
+  getTrip(tripId: string, lineName: string): Observable<TripInfo> {
+    const uriEncodedTripId = encodeURIComponent(tripId);
+    const uriEncodedLineName = encodeURIComponent(lineName)
+    const requestUri = `${this.apiUrl}/trips/${uriEncodedTripId}?lineName=${uriEncodedLineName}`;
+    return this.http.get<any>(requestUri).pipe(
+      map(data => data as TripInfo),
+      catchError(error => {
+        console.error('Fehler beim Abruf der Zugdaten:', error);
+        return throwError(() => new Error('Zugdaten können nicht abgerufen werden'));
+      }));
   }
 
   private toQueryString(params: Record<string, any>): string {
