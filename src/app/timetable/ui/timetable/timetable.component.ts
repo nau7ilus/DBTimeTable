@@ -21,8 +21,8 @@ export class TimetableComponent implements OnInit, OnDestroy {
   constructor(private trainService: TrainService) { }
 
   ngOnInit(): void {
-    this.subscription = interval(3000)
-      .pipe(switchMap(() => this.trainService.getTrainData('8012666')))
+    this.subscription = interval(30 * 1000)
+      .pipe(startWith(0))
       .pipe(switchMap(() => this.trainService.getDepartures('8012666'))) // Potsdam Hbf
       .subscribe({
         next: (data) => {
