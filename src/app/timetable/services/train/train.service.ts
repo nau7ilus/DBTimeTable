@@ -24,12 +24,30 @@ type Products = {
 };
 
 type Station = {
-  type: "station";
+  type: "station" | "stop";
   id: string;
   name: string;
   location: Location;
   products: Products;
 };
+
+type ArrivalDepartureInfo = {
+  departure: string;
+  plannedDeparture: string;
+  departureDelay: number | null;
+  departurePlatform: string;
+  departurePrognosisType: string | null;
+  plannedDeparturePlatform: string;
+
+  arrival: string;
+  plannedArrival: string;
+  arrivalDelay: number | null;
+  arrivalPlatform: string;
+  arrivalPrognosisType: string | null;
+  plannedArrivalPlatform: string;
+}
+
+type StopOverStation = ArrivalDepartureInfo & Station;
 
 type LineOperator = {
   type: "operator";
@@ -52,8 +70,8 @@ type Line = {
 };
 
 type Remark = {
-  type: 'status';
-  code: null;
+  type: 'status' | 'hint' | 'ZL' | 'hint';
+  code: string;
   text: string;
   summary?: string;
 }
@@ -75,6 +93,18 @@ export type DepartureInfo = {
   destination: Station;
   currentTripPosition: Location;
 };
+
+export type TripInfo = {
+  id: string;
+  realtimeDataUpdatedAt: number;
+  origin: Station;
+  destination: Station;
+  reachable: boolean;
+  line: Line;
+  direction: string;
+  stopovers: Station[];
+  remarks: Remark[];
+} & StopOverStation;
 
 @Injectable({
   providedIn: 'root'
