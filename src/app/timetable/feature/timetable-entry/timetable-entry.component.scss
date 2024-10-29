@@ -1,8 +1,9 @@
 .container {
-  div {
+  > div {
     display: flex;
     flex-direction: column;
     justify-content: end;
+    overflow: hidden;
   }
 
   .train,
@@ -40,9 +41,9 @@
     }
   }
 
-  .remarks {
-    white-space: nowrap;
-    overflow: hidden;
-    text-overflow: ellipsis;
+  .remarks > * {
+    font-size: 1.8rem;
+    color: var(--blue-bg);
+    background-color: #fff;
   }
 }
