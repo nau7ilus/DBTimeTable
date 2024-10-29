@@ -25,7 +25,6 @@ export class TimetableComponent implements OnInit, OnDestroy {
       .pipe(switchMap(() => this.trainService.getTrainData('8012666')))
       .subscribe({
         next: (data) => {
-          console.log(data)
           this.trainData = data;
         },
         error: (error) => {
