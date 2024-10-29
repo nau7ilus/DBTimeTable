@@ -17,8 +17,15 @@
     <span class="dest">{{ trainEntry.destination.name }}</span>
   </div>
 
-  <div>
-    <span class="track">{{ trainEntry.platform }}</span>
+  <div class="tracks">
+    @if (!trainEntry.cancelled) {
+    <span class="track"
+      [ngClass]="{ 'changed': trainEntry.platform !== trainEntry.plannedPlatform }">{{ trainEntry.plannedPlatform }}</span>
+
+    @if (trainEntry.platform !== trainEntry.plannedPlatform) {
+    <span class="track new">{{ trainEntry.platform }}</span>
+    }
+    }
   </div>
 
   <div class="remarks">

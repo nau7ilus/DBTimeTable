@@ -19,6 +19,28 @@
     font-weight: 500;
   }
 
+  .tracks:has(.new) {
+    display: flex;
+    flex-direction: row;
+    justify-content: start;
+    align-items: end;
+  }
+
+  .track {
+    &.changed {
+      text-decoration: line-through;
+      text-decoration-color: #fff;
+      text-decoration-thickness: 2px;
+      margin-right: 1rem;
+    }
+
+    &.new {
+      color: var(--blue-bg);
+      background-color: #fff;
+      padding: 0.2rem 0.1rem;
+    }
+  }
+
   .time {
     display: flex;
     align-items: center;
