@@ -1,4 +1,4 @@
-import { AfterViewInit, Component, ElementRef, Input, Renderer2, ViewChild } from '@angular/core';
+import { AfterViewInit, Component, ElementRef, Renderer2, ViewChild } from '@angular/core';
 
 @Component({
   selector: 'app-timetable-marquee',
@@ -8,8 +8,6 @@ import { AfterViewInit, Component, ElementRef, Input, Renderer2, ViewChild } fro
   styleUrl: './timetable-marquee.component.scss'
 })
 export class TimetableMarqueeComponent implements AfterViewInit {
-  @Input() speed = 100;
-
   @ViewChild('marqueeContainer') marqueeContainer!: ElementRef;
   @ViewChild('marqueeText') marqueeText!: ElementRef;
 
