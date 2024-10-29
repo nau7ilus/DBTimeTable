@@ -92,6 +92,7 @@ export type DepartureInfo = {
   origin: Station | null;
   destination: Station;
   currentTripPosition: Location;
+  cancelled?: boolean;
 };
 
 type StopOver = {

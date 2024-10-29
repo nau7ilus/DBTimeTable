@@ -1,3 +1,4 @@
+import { NgClass } from '@angular/common';
 import { Component, Input } from '@angular/core';
 import { DepartureInfo, TrainService, TripInfo } from '../../services/train/train.service';
 import { TimetableMarqueeComponent } from '../../ui/timetable-marquee/timetable-marquee.component';
@@ -5,7 +6,7 @@ import { TimetableMarqueeComponent } from '../../ui/timetable-marquee/timetable-
 @Component({
   selector: 'app-timetable-entry',
   standalone: true,
-  imports: [TimetableMarqueeComponent],
+  imports: [TimetableMarqueeComponent, NgClass],
   templateUrl: './timetable-entry.component.html',
   styleUrl: './timetable-entry.component.scss'
 })
