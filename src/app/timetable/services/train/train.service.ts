@@ -51,7 +51,6 @@ type Line = {
   additionalName: string;
 };
 
-export type TrainInfo = {
 type Remark = {
   type: 'status';
   code: null;
@@ -59,6 +58,7 @@ type Remark = {
   summary?: string;
 }
 
+export type DepartureInfo = {
   tripId: string;
   stop: Station;
   when: string;
@@ -88,7 +88,6 @@ export class TrainService {
     subway: false,
     tram: false,
     suburban: false,
-    duration: 60
     duration: 60,
     language: 'de',
     remarks: true
@@ -96,11 +95,11 @@ export class TrainService {
 
   constructor(private http: HttpClient) { }
 
-  getTrainData(stopId: string): Observable<TrainInfo[]> {
+  getDepartures(stopId: string): Observable<DepartureInfo[]> {
     const url = `${this.apiUrl}/${stopId}/departures?${this.toQueryString(this.options)}`;
     return this.http.get<any>(url).pipe(
       map(data => {
-        return data as TrainInfo[];
+        return data as DepartureInfo[];
       }),
       catchError(error => {
         console.error('Fehler beim Datenabruf:', error);

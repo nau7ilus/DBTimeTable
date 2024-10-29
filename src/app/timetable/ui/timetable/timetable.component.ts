@@ -3,7 +3,7 @@ import { interval, Subscription } from 'rxjs';
 import { switchMap } from 'rxjs/operators';
 import { TimetableClockComponent } from '../../feature/timetable-clock/timetable-clock.component';
 import { TimetableEntryComponent } from '../../feature/timetable-entry/timetable-entry.component';
-import { TrainInfo, TrainService } from '../../services/train/train.service';
+import { DepartureInfo, TrainService } from '../../services/train/train.service';
 import { TimetableHeaderComponent } from '../timetable-header/timetable-header.component';
 
 @Component({
@@ -15,7 +15,7 @@ import { TimetableHeaderComponent } from '../timetable-header/timetable-header.c
   encapsulation: ViewEncapsulation.None,
 })
 export class TimetableComponent implements OnInit, OnDestroy {
-  trainData: TrainInfo[] = [];
+  trainData: DepartureInfo[] = [];
   private subscription!: Subscription;
 
   constructor(private trainService: TrainService) { }
@@ -23,6 +23,7 @@ export class TimetableComponent implements OnInit, OnDestroy {
   ngOnInit(): void {
     this.subscription = interval(3000)
       .pipe(switchMap(() => this.trainService.getTrainData('8012666')))
+      .pipe(switchMap(() => this.trainService.getDepartures('8012666'))) // Potsdam Hbf
       .subscribe({
         next: (data) => {
           this.trainData = data;
