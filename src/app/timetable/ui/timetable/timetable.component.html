@@ -36,7 +36,13 @@
   @for (trainEntry of trainData; track trainEntry.tripId) {
   <app-timetable-entry [trainEntry]="trainEntry"></app-timetable-entry>
   } @empty {
-  <p>loading...</p>
+  <div class="loader-container">
+    <div class="loader">
+      <div class="track"></div>
+      <div class="train"></div>
+    </div>
+  </div>
+
   }
 
 </section>
