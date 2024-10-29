@@ -1,5 +1,5 @@
 import { Component, Input } from '@angular/core';
-import { TrainInfo } from '../../services/train/train.service';
+import { DepartureInfo } from '../../services/train/train.service';
 import { TimetableMarqueeComponent } from '../../ui/timetable-marquee/timetable-marquee.component';
 
 @Component({
@@ -10,7 +10,7 @@ import { TimetableMarqueeComponent } from '../../ui/timetable-marquee/timetable-
   styleUrl: './timetable-entry.component.scss'
 })
 export class TimetableEntryComponent {
-  @Input() trainEntry!: TrainInfo;
+  @Input() trainEntry!: DepartureInfo;
 
   plannedTime: string = '';
   actualTime: string = '';
