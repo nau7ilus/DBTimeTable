@@ -51,7 +51,7 @@ type Line = {
   additionalName: string;
 };
 
-type TrainInfo = {
+export type TrainInfo = {
   tripId: string;
   stop: Station;
   when: string;

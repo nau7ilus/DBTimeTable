@@ -3,8 +3,7 @@ import { interval, Subscription } from 'rxjs';
 import { switchMap } from 'rxjs/operators';
 import { TimetableClockComponent } from '../../feature/timetable-clock/timetable-clock.component';
 import { TimetableEntryComponent } from '../../feature/timetable-entry/timetable-entry.component';
-import { TrainInfo } from '../../services/train/train.codec';
-import { TrainService } from '../../services/train/train.service';
+import { TrainInfo, TrainService } from '../../services/train/train.service';
 import { TimetableHeaderComponent } from '../timetable-header/timetable-header.component';
 
 @Component({

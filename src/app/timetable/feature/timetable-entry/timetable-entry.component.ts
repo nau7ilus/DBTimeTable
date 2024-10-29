@@ -1,5 +1,5 @@
 import { Component, Input } from '@angular/core';
-import { TrainInfo } from '../../services/train/train.codec';
+import { TrainInfo } from '../../services/train/train.service';
 import { TimetableMarqueeComponent } from '../../ui/timetable-marquee/timetable-marquee.component';
 
 @Component({
