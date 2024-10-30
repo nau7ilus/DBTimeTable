@@ -1,4 +1,11 @@
 .container {
+  transition: all 0.1s ease-in-out;
+
+  &:hover {
+    background-color: #061350;
+    cursor: pointer;
+  }
+
   > div {
     display: flex;
     flex-direction: column;
