@@ -1,18 +1,22 @@
 import { NgClass } from '@angular/common';
 import { Component, Input } from '@angular/core';
+import { TrainModalComponent } from '../../feature/train-modal/train-modal.component';
 import { DepartureInfo, TrainService, TripInfo } from '../../services/train/train.service';
+import { InnerDrawerComponent } from '../../ui/inner-drawer/inner-drawer.component';
 import { TimetableMarqueeComponent } from '../../ui/timetable-marquee/timetable-marquee.component';
 
 @Component({
   selector: 'app-timetable-entry',
   standalone: true,
-  imports: [TimetableMarqueeComponent, NgClass],
+  imports: [TimetableMarqueeComponent, NgClass, TrainModalComponent, InnerDrawerComponent],
   templateUrl: './timetable-entry.component.html',
   styleUrl: './timetable-entry.component.scss'
 })
 export class TimetableEntryComponent {
   @Input() trainEntry!: DepartureInfo;
-  private tripInfo!: TripInfo;
+  @Input('modalDialog') modalDialog: any;
+
+  tripInfo!: TripInfo;
 
   plannedTime: string = '';
   actualTime: string = '';

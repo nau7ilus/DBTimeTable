@@ -1,4 +1,8 @@
-<div class="container" [ngClass]="{ 'cancelled': trainEntry.cancelled }">
+<app-train-modal #modal>
+  <app-inner-drawer [trip]="tripInfo" />
+</app-train-modal>
+
+<div class="container" (click)="modal.openModal()" [ngClass]="{ 'cancelled': trainEntry.cancelled }">
   <div>
     <span class="train">{{ trainEntry.line.name }} / {{ trainEntry.line.fahrtNr }}</span>
     <span class="time">

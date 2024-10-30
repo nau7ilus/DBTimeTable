@@ -1,0 +1,62 @@
+.drawer {
+  position: fixed;
+  right: 0;
+  top: 0;
+  width: min(90vw, 40rem);
+  margin-top: 1rem;
+  margin-right: 1.5rem;
+  margin-left: auto;
+  height: calc(100% - 2rem);
+  border: none;
+  padding: 20px;
+  background: #fff;
+  box-shadow: 0 0 10px rgb(0 0 0 / 50%);
+  overflow: auto;
+  border-radius: 0.375rem;
+
+  &.opened {
+    animation: slide-in 0.75s forwards;
+  }
+
+  &:not(.opened) {
+    animation: slide-out 0.75s forwards;
+  }
+}
+
+dialog::backdrop {
+  background: #000;
+  opacity: 0.2;
+}
+
+// Slide in animation
+@keyframes slide-in {
+  0% {
+    transform: translateX(100%);
+  }
+
+  100% {
+    transform: translateX(0);
+  }
+}
+
+@keyframes slide-out {
+  0% {
+    transform: translateX(0);
+  }
+
+  100% {
+    transform: translateX(-100%);
+  }
+}
+
+@media (prefers-reduced-motion) {
+  .drawer {
+    &.opened {
+      animation: none;
+    }
+
+    &:not(.opened) {
+      animation: none;
+    }
+  }
+}
