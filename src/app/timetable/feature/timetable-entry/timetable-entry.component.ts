@@ -28,8 +28,10 @@ export class TimetableEntryComponent {
 
   get viaStops() {
     if (!this.tripInfo) return ''
+
     const currentStationIndex = this.tripInfo.stopovers.findIndex(s => s.stop.id === this.stationId)
-    const stopovers = this.tripInfo.stopovers.filter((so, index) => (so.stop.products.regionalExp || so.stop.products.nationalExpress) && index > currentStationIndex + 1)
+
+    const stopovers = this.tripInfo.stopovers.filter((so, index) => (so.stop.products.regionalExp || so.stop.products.nationalExpress) && index > currentStationIndex)
     return stopovers.map(s => s.stop.name).join(' — ')
   }
 
@@ -59,7 +61,6 @@ export class TimetableEntryComponent {
     this.trainService.getTrip(this.trainEntry.tripId, this.trainEntry.line.name).subscribe({
       next: data => {
         this.tripInfo = data;
-        console.log(data, this.hasArrived)
       },
       error: () => {
         alert(`Fehler beim Abruf des Zuges ${this.trainEntry.line.name}`)

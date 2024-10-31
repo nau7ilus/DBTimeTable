@@ -1,4 +1,4 @@
-import { Component, OnDestroy, OnInit, ViewEncapsulation } from '@angular/core';
+import { Component, Input, OnDestroy, OnInit, ViewEncapsulation } from '@angular/core';
 import { interval, Subscription } from 'rxjs';
 import { startWith, switchMap } from 'rxjs/operators';
 import { TimetableClockComponent } from '../../feature/timetable-clock/timetable-clock.component';
@@ -15,6 +15,7 @@ import { TimetableHeaderComponent } from '../timetable-header/timetable-header.c
   encapsulation: ViewEncapsulation.None,
 })
 export class TimetableComponent implements OnInit, OnDestroy {
+  @Input() stationId = '8011160';
   trainData: DepartureInfo[] = [];
   private subscription!: Subscription;
 
@@ -23,7 +24,7 @@ export class TimetableComponent implements OnInit, OnDestroy {
   ngOnInit(): void {
     this.subscription = interval(30 * 1000)
       .pipe(startWith(0))
-      .pipe(switchMap(() => this.trainService.getDepartures('8012666'))) // Potsdam Hbf
+      .pipe(switchMap(() => this.trainService.getDepartures(this.stationId)))
       .subscribe({
         next: (data) => {
           this.trainData = data.sort((a, b) => new Date(a.plannedWhen).getTime() - new Date(b.plannedWhen).getTime());
