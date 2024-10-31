@@ -51,10 +51,14 @@ export class TimetableEntryComponent {
 
   ngOnInit(): void {
     if (this.trainEntry) {
-      this.plannedTime = this.formatTime(this.trainEntry.plannedWhen);
-      this.actualTime = this.formatTime(this.trainEntry.when);
+      this.plannedTime = TrainService.formatTime(this.trainEntry.plannedWhen);
+      this.actualTime = TrainService.formatTime(this.trainEntry.when);
       this.fetchTripInfo();
     }
+
+    setTimeout(() => {
+      this.openModal()
+    }, 500)
   }
 
   private fetchTripInfo(): void {
@@ -77,12 +81,5 @@ export class TimetableEntryComponent {
     componentRef.instance.closeModal = () => {
       componentRef.destroy()
     }
-  }
-
-  private formatTime(dateTimeString: string): string {
-    const date = new Date(dateTimeString);
-    const hours = date.getHours().toString().padStart(2, '0');
-    const minutes = date.getMinutes().toString().padStart(2, '0');
-    return `${hours}:${minutes}`;
   }
 }
