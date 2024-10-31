@@ -14,15 +14,23 @@
 
     <div class="container">
       <div class="stopovers">
-        @for (stop of trip.stopovers; track stop.stop.id) {
-        <div class="stop">
-          <div class="time"><span class="planned"
-              [ngClass]="{ 'delayed': !!stop.departureDelay }">{{ stop.plannedDeparture }}</span>
+        @for (stop of trip.stopovers; track stop.stop.id; let idx = $index) {
+        <div class="stop" [ngClass]="{ 'visited': getNextStopIndex() > idx}" [id]="'station-' + idx">
+          <div class="time">
+            <span class="planned"
+              [ngClass]="{ 'delayed': !!stop.departureDelay }">{{ formatTime(stop.plannedDeparture) }}</span>
+
             @if (stop.departureDelay) {
-            <span class="actual">11:05</span>
+            <span class="actual">{{ formatTime(stop.departure)  }}</span>
             }
           </div>
-          <div class="point"></div>
+          <div class="point">
+            @if (getNextStopIndex() > idx) {
+            <img class="visited" src="/assets/images/point-grey.svg">
+            } @else {
+            <img class="next" src="/assets/images/point-dark.svg">
+            }
+          </div>
           <div class="station"><span class="name">{{ stop.stop.name }}</span></div>
         </div>
         }
