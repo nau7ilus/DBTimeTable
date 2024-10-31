@@ -13,7 +13,11 @@ import { TimetableMarqueeComponent } from '../../ui/timetable-marquee/timetable-
 })
 export class TimetableEntryComponent {
   @Input() trainEntry!: DepartureInfo;
+  @Input() stationId!: string;
   tripInfo!: TripInfo;
+
+  arrivalDatestring!: string;
+  arrivalTime: number = 0;
 
   plannedTime: string = '';
   actualTime: string = '';
@@ -23,18 +27,24 @@ export class TimetableEntryComponent {
   ) { }
 
   get viaStops() {
-    return this.tripInfo ? this.tripInfo.stopovers.filter(stopover => stopover.stop.products.nationalExpress).map(stopover => stopover.stop.name).join(' — ') : ''
+    if (!this.tripInfo) return ''
+    const currentStationIndex = this.tripInfo.stopovers.findIndex(s => s.stop.id === this.stationId)
+    const stopovers = this.tripInfo.stopovers.filter((so, index) => (so.stop.products.regionalExp || so.stop.products.nationalExpress) && index > currentStationIndex + 1)
+    return stopovers.map(s => s.stop.name).join(' — ')
   }
 
   get remarks() {
     return this.trainEntry.remarks.map(r => r.text).join(" +++ ")
   }
 
+  // TODO: Nicht möglich zu bestimmen, weil API absurde Daten schickt
   get hasArrived() {
     if (!this.tripInfo?.arrival) return false;
-    else return true
-    //  const arrivalDate = new Date(this?.tripInfo?.arrival)
-    //return Date.now() - arrivalDate.getTime() > 0
+    if (this.arrivalDatestring !== this.tripInfo.arrival) {
+      this.arrivalDatestring = this.tripInfo.arrival;
+      this.arrivalTime = new Date(this.arrivalDatestring).getTime()
+    }
+    return Date.now() - this.arrivalTime > 0
   }
 
   ngOnInit(): void {
@@ -49,6 +59,7 @@ export class TimetableEntryComponent {
     this.trainService.getTrip(this.trainEntry.tripId, this.trainEntry.line.name).subscribe({
       next: data => {
         this.tripInfo = data;
+        console.log(data, this.hasArrived)
       },
       error: () => {
         alert(`Fehler beim Abruf des Zuges ${this.trainEntry.line.name}`)

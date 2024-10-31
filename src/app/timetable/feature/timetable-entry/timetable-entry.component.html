@@ -1,6 +1,6 @@
 <div class="entry">
 
-  <div class="container" (click)="openModal()" [ngClass]="{ 'cancelled': trainEntry.cancelled }">
+  <div class="container" (click)="openModal()" [ngClass]="{ 'cancelled': trainEntry.cancelled, 'arrived': hasArrived }">
     <div>
       <span class="train">{{ trainEntry.line.name }} / {{ trainEntry.line.fahrtNr }}</span>
       <span class="time">
