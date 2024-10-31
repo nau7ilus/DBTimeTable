@@ -1,40 +1,39 @@
-<app-train-modal #modal>
-  <app-inner-drawer [trip]="tripInfo" />
-</app-train-modal>
+<div class="entry">
 
-<div class="container" (click)="modal.openModal()" [ngClass]="{ 'cancelled': trainEntry.cancelled }">
-  <div>
-    <span class="train">{{ trainEntry.line.name }} / {{ trainEntry.line.fahrtNr }}</span>
-    <span class="time">
-      <span class="planned">{{ plannedTime }}</span>
-      @if (trainEntry.delay) {
-      <div class="actual">{{ actualTime }}</div>
+  <div class="container" (click)="openModal()" [ngClass]="{ 'cancelled': trainEntry.cancelled }">
+    <div>
+      <span class="train">{{ trainEntry.line.name }} / {{ trainEntry.line.fahrtNr }}</span>
+      <span class="time">
+        <span class="planned">{{ plannedTime }}</span>
+        @if (trainEntry.delay) {
+        <div class="actual">{{ actualTime }}</div>
+        }
+      </span>
+    </div>
+
+    <div>
+      <app-timetable-marquee class="via">
+        {{ this.viaStops }}
+      </app-timetable-marquee>
+
+      <span class="dest">{{ trainEntry.destination.name }}</span>
+    </div>
+
+    <div class="tracks">
+      @if (!trainEntry.cancelled) {
+      <span class="track"
+        [ngClass]="{ 'changed': trainEntry.platform !== trainEntry.plannedPlatform }">{{ trainEntry.plannedPlatform }}</span>
+
+      @if (trainEntry.platform !== trainEntry.plannedPlatform) {
+      <span class="track new">{{ trainEntry.platform }}</span>
       }
-    </span>
-  </div>
+      }
+    </div>
 
-  <div>
-    <app-timetable-marquee class="via">
-      {{ this.viaStops }}
-    </app-timetable-marquee>
-
-    <span class="dest">{{ trainEntry.destination.name }}</span>
-  </div>
-
-  <div class="tracks">
-    @if (!trainEntry.cancelled) {
-    <span class="track"
-      [ngClass]="{ 'changed': trainEntry.platform !== trainEntry.plannedPlatform }">{{ trainEntry.plannedPlatform }}</span>
-
-    @if (trainEntry.platform !== trainEntry.plannedPlatform) {
-    <span class="track new">{{ trainEntry.platform }}</span>
-    }
-    }
-  </div>
-
-  <div class="remarks">
-    <app-timetable-marquee>
-      {{ this.remarks }}
-    </app-timetable-marquee>
+    <div class="remarks">
+      <app-timetable-marquee>
+        {{ this.remarks }}
+      </app-timetable-marquee>
+    </div>
   </div>
 </div>

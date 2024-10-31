@@ -17,42 +17,90 @@
   &:not(.opened) {
     animation: slide-out 0.75s forwards;
   }
+
+  &::backdrop {
+    background: #000;
+    opacity: 0.4;
+  }
+
+  @keyframes slide-in {
+    0% {
+      transform: translateX(100%);
+    }
+
+    100% {
+      transform: translateX(0);
+    }
+  }
+
+  @keyframes slide-out {
+    0% {
+      transform: translateX(0);
+    }
+
+    100% {
+      transform: translateX(-100%);
+    }
+  }
+
+  @media (prefers-reduced-motion) {
+    .drawer {
+      &.opened {
+        animation: none;
+      }
+
+      &:not(.opened) {
+        animation: none;
+      }
+    }
+  }
 }
 
-dialog::backdrop {
-  background: #000;
-  opacity: 0.4;
+.container {
+  max-width: 80%;
+  display: block;
 }
 
-// Slide in animation
-@keyframes slide-in {
+.train-details {
+  padding-top: 2rem;
+
+  header {
+    position: relative;
+    display: inline-block;
+
+    h2 {
+      background-color: var(--blue-bg);
+      color: #fff;
+      padding: 1.25rem 1.5rem;
+      font-size: 2rem;
+      width: 100%;
+      clip-path: polygon(0 0, 100% 0, 90% 100%, 0 100%);
+      z-index: 2;
+    }
+
+    .train-animation {
+      position: absolute;
+      z-index: 0;
+      animation: train-slide-in 1.5s forwards;
+      top: -0.6rem;
+
+      img {
+        max-height: 6rem;
+      }
+    }
+  }
+}
+
+@keyframes train-slide-in {
   0% {
-    transform: translateX(100%);
+    transform: translateX(0);
+  }
+
+  50% {
+    transform: translateX(0);
   }
 
   100% {
-    transform: translateX(0);
-  }
-}
-
-@keyframes slide-out {
-  0% {
-    transform: translateX(0);
-  }
-
-  100% {
-    transform: translateX(-100%);
-  }
-}
-
-@media (prefers-reduced-motion) {
-  .drawer {
-    &.opened {
-      animation: none;
-    }
-
-    &:not(.opened) {
-      animation: none;
-    }
+    transform: translateX(20rem);
   }
 }

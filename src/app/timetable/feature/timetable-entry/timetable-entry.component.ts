@@ -1,43 +1,48 @@
 import { NgClass } from '@angular/common';
-import { Component, Input } from '@angular/core';
+import { Component, Input, ViewContainerRef } from '@angular/core';
 import { TrainModalComponent } from '../../feature/train-modal/train-modal.component';
 import { DepartureInfo, TrainService, TripInfo } from '../../services/train/train.service';
-import { InnerDrawerComponent } from '../../ui/inner-drawer/inner-drawer.component';
 import { TimetableMarqueeComponent } from '../../ui/timetable-marquee/timetable-marquee.component';
 
 @Component({
   selector: 'app-timetable-entry',
   standalone: true,
-  imports: [TimetableMarqueeComponent, NgClass, TrainModalComponent, InnerDrawerComponent],
+  imports: [TimetableMarqueeComponent, NgClass, TrainModalComponent],
   templateUrl: './timetable-entry.component.html',
   styleUrl: './timetable-entry.component.scss'
 })
 export class TimetableEntryComponent {
   @Input() trainEntry!: DepartureInfo;
-  @Input('modalDialog') modalDialog: any;
-
   tripInfo!: TripInfo;
 
   plannedTime: string = '';
   actualTime: string = '';
 
-  constructor(private trainService: TrainService) { }
+  constructor(private trainService: TrainService,
+    private viewContainerRef: ViewContainerRef
+  ) { }
 
   get viaStops() {
-    return this.tripInfo ? this.tripInfo.stopovers.map(stopover => stopover.stop.name).join(' — ') : ''
+    return this.tripInfo ? this.tripInfo.stopovers.filter(stopover => stopover.stop.products.nationalExpress).map(stopover => stopover.stop.name).join(' — ') : ''
   }
 
   get remarks() {
     return this.trainEntry.remarks.map(r => r.text).join(" +++ ")
   }
 
+  get hasArrived() {
+    if (!this.tripInfo?.arrival) return false;
+    else return true
+    //  const arrivalDate = new Date(this?.tripInfo?.arrival)
+    //return Date.now() - arrivalDate.getTime() > 0
+  }
+
   ngOnInit(): void {
     if (this.trainEntry) {
       this.plannedTime = this.formatTime(this.trainEntry.plannedWhen);
       this.actualTime = this.formatTime(this.trainEntry.when);
+      this.fetchTripInfo();
     }
-
-    this.fetchTripInfo();
   }
 
   private fetchTripInfo(): void {
@@ -49,6 +54,17 @@ export class TimetableEntryComponent {
         alert(`Fehler beim Abruf des Zuges ${this.trainEntry.line.name}`)
       }
     })
+  }
+
+  openModal(): void {
+    const componentRef = this.viewContainerRef.createComponent(TrainModalComponent);
+
+    componentRef.instance.trip = this.tripInfo;
+    componentRef.instance.isOpened = true;
+
+    componentRef.instance.closeModal = () => {
+      componentRef.destroy()
+    }
   }
 
   private formatTime(dateTimeString: string): string {

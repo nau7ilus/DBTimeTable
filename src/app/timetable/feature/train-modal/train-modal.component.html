@@ -1,3 +1,33 @@
 <dialog type="modal" id="dialog" class="drawer" #dialog>
-  <ng-content></ng-content>
+  <section class="train-details">
+    @if (trip) {
+    <header>
+      <div class="train-animation">
+        @if (trip.line.product === 'regional') {
+        <img src="/assets/images/trains/regio.png" alt="Regio">
+        } @else {
+        <img src="/assets/images/trains/ice.png" alt="ICE">
+        }
+      </div>
+      <h2 class="path">{{ trip.origin.name }} - {{ trip.destination.name }}</h2>
+    </header>
+
+    <div class="container">
+      <div class="stopovers">
+        @for (stop of trip.stopovers; track stop.stop.id) {
+        <div class="stop">
+          <div class="time"><span class="planned"
+              [ngClass]="{ 'delayed': !!stop.departureDelay }">{{ stop.plannedDeparture }}</span>
+            @if (stop.departureDelay) {
+            <span class="actual">11:05</span>
+            }
+          </div>
+          <div class="point"></div>
+          <div class="station"><span class="name">{{ stop.stop.name }}</span></div>
+        </div>
+        }
+      </div>
+    </div>
+    }
+  </section>
 </dialog>

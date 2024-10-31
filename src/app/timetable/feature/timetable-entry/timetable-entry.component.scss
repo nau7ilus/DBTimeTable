@@ -1,8 +1,36 @@
+.hasArrived::before {
+  content: "";
+  position: absolute;
+  left: -2rem;
+  top: 1.8rem;
+  width: 0.8rem;
+  height: 0.8rem;
+  border-radius: 50%;
+  background-color: #fff;
+  animation: 1s linear blink infinite;
+}
+
+@keyframes blink {
+  0% {
+    border: solid 0.2rem #fff;
+  }
+
+  100% {
+    border: none;
+  }
+}
+
 .container {
   transition: all 0.1s ease-in-out;
+  position: relative;
 
-  &:hover {
+  &:not(.cancelled):hover {
     background-color: #061350;
+    cursor: pointer;
+  }
+
+  &.cancelled:hover {
+    background-color: #e0effb;
     cursor: pointer;
   }
 
