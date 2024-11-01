@@ -13,6 +13,30 @@
     </header>
 
     <div class="container">
+      <div class="train-info">
+        <div class="line">
+          <label>Linie:</label>
+          <span>{{ trip.line.name }}</span>
+        </div>
+
+        <div class="operator">
+          <label>Operator:</label>
+          <span>{{ trip.line.operator.name }}</span>
+        </div>
+
+        @if (trip.currentLocation) {
+        <div class="speed">
+          <label>Geschwindigkeit:</label>
+          @if (currentSpeed) {
+          <span>{{ currentSpeed.toFixed(0) }} km/h</span>
+          } @else {
+          <span class="calculating">Wird berechnet...</span>
+          }
+        </div>
+        }
+
+      </div>
+
       <div class="stopovers">
         @for (stop of trip.stopovers; track stop.stop.id; let idx = $index) {
         <div class="stop" [ngClass]="{ 'visited': getNextStopIndex() > idx}" [id]="'station-' + idx">
@@ -33,6 +57,16 @@
           </div>
           <div class="station"><span class="name">{{ stop.stop.name }}</span></div>
         </div>
+        }
+      </div>
+
+
+
+      <div class="map">
+        @if (trip.currentLocation) {
+        <app-map [trainCoords]="[trip.currentLocation.latitude, trip.currentLocation.longitude]" />
+        } @else {
+        <p>No currentLocation</p>
         }
       </div>
     </div>
