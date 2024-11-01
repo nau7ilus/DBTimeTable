@@ -145,7 +145,7 @@ export class TrainService {
   getTrip(tripId: string, lineName: string): Observable<TripInfo> {
     const uriEncodedTripId = encodeURIComponent(tripId);
     const uriEncodedLineName = encodeURIComponent(lineName)
-    const requestUri = `${this.apiUrl}/trips/${uriEncodedTripId}?lineName=${uriEncodedLineName}`;
+    const requestUri = `${this.apiUrl}/trips/${uriEncodedTripId}?lineName=${uriEncodedLineName}&language=de`;
     return this.http.get<any>(requestUri).pipe(
       map(data => data as TripInfo),
       catchError(error => {
