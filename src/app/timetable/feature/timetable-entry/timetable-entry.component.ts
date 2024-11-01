@@ -113,6 +113,7 @@ export class TimetableEntryComponent implements OnDestroy, OnInit {
         tap({
           next: (data: TripInfo) => {
             this.tripInfo = data;
+            if (this.modal) this.modal.instance.trip = this.tripInfo
             const currentLocation = this.tripInfo?.currentLocation;
             const updateTime = this.tripInfo.realtimeDataUpdatedAt;
             if (currentLocation && this.lastUpdate !== updateTime) {

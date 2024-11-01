@@ -13,6 +13,7 @@ export class MapComponent implements AfterViewInit {
   private map!: L.Map;
   @Input('trainCoords') trainCoords: L.LatLngTuple = [52.52, 13.40];
   @Input('tripInfo') tripInfo!: TripInfo;
+  trainMarker!: L.Marker;
 
   private initMap(): void {
     this.map = L.map('map', {
@@ -55,14 +56,28 @@ export class MapComponent implements AfterViewInit {
       smoothFactor: 2
     }).addTo(this.map)
 
+
+    this.setTrainMarker()
+
+    setInterval(() => {
+      this.setTrainMarker()
+    }, 5000)
+  }
+
+  setTrainMarker(): void {
     const trainIcon = L.icon({
       iconUrl: '/assets/images/train.png',
       iconSize: [30, 45]
     })
 
-    L.marker(this.trainCoords, { icon: trainIcon }).addTo(this.map);
-
+    if (!this.trainMarker) {
+      this.trainMarker = L.marker(this.trainCoords, { icon: trainIcon }).addTo(this.map);
+    } else {
+      this.trainMarker.setLatLng(this.trainCoords)
+      this.map.panTo(this.trainCoords)
+    }
   }
+
   ngAfterViewInit(): void {
     this.initMap();
   }

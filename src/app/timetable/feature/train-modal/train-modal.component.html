@@ -1,4 +1,4 @@
-<dialog type="modal" id="dialog" class="drawer" #dialog>
+<dialog type="modal" [ngClass]="{ 'modal-opened': isOpened }" id="dialog" class="drawer" #dialog>
   <section class="train-details">
     @if (trip) {
     <header>
