@@ -64,7 +64,7 @@
 
       <div class="map">
         @if (trip.currentLocation) {
-        <app-map [trainCoords]="[trip.currentLocation.latitude, trip.currentLocation.longitude]" />
+        <app-map [tripInfo]="trip" [trainCoords]="[trip.currentLocation.latitude, trip.currentLocation.longitude]" />
         } @else {
         <p>No currentLocation</p>
         }

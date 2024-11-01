@@ -1,17 +1,20 @@
 import { NgClass } from '@angular/common';
 import { AfterViewInit, Component, ElementRef, Input, Renderer2, ViewChild } from '@angular/core';
+import { DBUIElementsModule } from '@db-ui/ngx-elements/dist/lib';
 import { TrainService, TripInfo } from '../../services/train/train.service';
+import { MapComponent } from '../map/map.component';
 
 @Component({
   selector: 'app-train-modal',
   standalone: true,
-  imports: [NgClass],
+  imports: [NgClass, MapComponent, DBUIElementsModule],
   templateUrl: './train-modal.component.html',
-  styleUrl: './train-modal.component.scss'
+  styleUrls: ['./train-modal.component.scss'],
 })
 export class TrainModalComponent implements AfterViewInit {
   @ViewChild('dialog') dialog!: ElementRef<HTMLDialogElement>;
   @Input() trip!: TripInfo;
+  @Input() currentSpeed: number = 0;
   isOpened = false;
 
   constructor(private renderer: Renderer2) { }
