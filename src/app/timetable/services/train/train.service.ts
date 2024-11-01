@@ -109,6 +109,7 @@ export type TripInfo = {
   direction: string;
   stopovers: StopOver[];
   remarks: Remark[];
+  currentLocation: Location
 } & StopOverStation;
 
 @Injectable({
