@@ -2,7 +2,7 @@
   position: fixed;
   right: 0;
   top: 0;
-  width: min(90vw, 45rem);
+  width: min(60vw, 45rem);
   margin-left: auto;
   height: 100%;
   background: #fff;
@@ -76,12 +76,12 @@
       font-size: 2rem;
       width: 100%;
       clip-path: polygon(0 0, 100% 0, 90% 100%, 0 100%);
-      z-index: 2;
+      z-index: 100;
     }
 
     .train-animation {
       position: absolute;
-      z-index: 0;
+      z-index: -1;
       animation: train-slide-in 1.5s forwards;
       top: -0.6rem;
 
@@ -109,6 +109,7 @@
     display: block;
     margin-bottom: 2rem;
     overflow-y: scroll;
+    overflow-x: hidden;
     scroll-behavior: smooth;
     height: 20rem;
   }
