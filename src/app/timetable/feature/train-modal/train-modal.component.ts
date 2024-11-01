@@ -1,13 +1,12 @@
 import { NgClass } from '@angular/common';
 import { AfterViewInit, Component, ElementRef, Input, Renderer2, ViewChild } from '@angular/core';
-import { DBUIElementsModule } from '@db-ui/ngx-elements/dist/lib';
 import { TrainService, TripInfo } from '../../services/train/train.service';
 import { MapComponent } from '../map/map.component';
 
 @Component({
   selector: 'app-train-modal',
   standalone: true,
-  imports: [NgClass, MapComponent, DBUIElementsModule],
+  imports: [NgClass, MapComponent],
   templateUrl: './train-modal.component.html',
   styleUrls: ['./train-modal.component.scss'],
 })
